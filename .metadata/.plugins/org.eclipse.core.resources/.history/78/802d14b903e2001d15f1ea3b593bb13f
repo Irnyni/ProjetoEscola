@@ -1,0 +1,167 @@
+package escola;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextArea;
+import java.awt.Color;
+import javax.swing.JPasswordField;
+import java.awt.Cursor;
+import javax.swing.JRadioButton;
+import java.awt.Component;
+import javax.swing.SwingConstants;
+import java.awt.Dimension;
+import java.awt.Button;
+import java.awt.TextArea;
+import javax.swing.JInternalFrame;
+import javax.swing.border.LineBorder;
+
+public class loginProf extends JFrame {
+
+	private JPanel contentPane;
+	private int cont;
+	private int a;
+	private JPasswordField passwordField;
+	private JTextField txtBp;
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					loginProf frame = new loginProf();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+		public loginProf() {
+		setAlwaysOnTop(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(330, 50, 800, 800);
+		contentPane = new JPanel();
+		contentPane.setSize(new Dimension(30, 10));
+		contentPane.setBackground(new Color(47, 0, 0));
+		contentPane.setForeground(new Color(64, 0, 64));
+		contentPane.setBorder(new EmptyBorder(0, 0, 0, 0));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(81, 11, -35, 26);
+		contentPane.add(lblNewLabel);
+
+		JLabel lblInserirGuich = new JLabel("PORTAL");
+		lblInserirGuich.setBounds(10, 11, 451, 133);
+		lblInserirGuich.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+		lblInserirGuich.setAutoscrolls(true);
+		lblInserirGuich.setForeground(new Color(255, 255, 255));
+		lblInserirGuich.setFont(new Font("Javanese Text", Font.BOLD, 99));
+		contentPane.add(lblInserirGuich);
+		
+		JButton btnVoltar = new JButton("ENTRAR");
+		btnVoltar.setBounds(312, 524, 148, 39);
+		btnVoltar.setForeground(new Color(64, 0, 0));
+		btnVoltar.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnVoltar.setBackground(new Color(255, 255, 255));
+		contentPane.add(btnVoltar);
+		
+		JLabel lblProfessor = new JLabel("LOGIN");
+		lblProfessor.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblProfessor.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblProfessor.setForeground(Color.WHITE);
+		lblProfessor.setFont(new Font("Javanese Text", Font.BOLD, 50));
+		lblProfessor.setAutoscrolls(true);
+		lblProfessor.setAlignmentY(1.0f);
+		lblProfessor.setBounds(268, 101, 219, 80);
+		contentPane.add(lblProfessor);
+		
+		passwordField = new JPasswordField();
+		passwordField.setHorizontalAlignment(SwingConstants.CENTER);
+		passwordField.setFont(new Font("Tahoma", Font.PLAIN, 35));
+		passwordField.setText("23232323");
+		passwordField.setBounds(225, 422, 340, 54);
+		contentPane.add(passwordField);
+		
+		JLabel lblRa = new JLabel("RA");
+		lblRa.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblRa.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblRa.setForeground(Color.WHITE);
+		lblRa.setFont(new Font("Javanese Text", Font.BOLD, 35));
+		lblRa.setAutoscrolls(true);
+		lblRa.setAlignmentY(1.0f);
+		lblRa.setBounds(39, 325, 169, 50);
+		contentPane.add(lblRa);
+		
+		JLabel lblSenha = new JLabel("SENHA");
+		lblSenha.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblSenha.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblSenha.setForeground(Color.WHITE);
+		lblSenha.setFont(new Font("Javanese Text", Font.BOLD, 35));
+		lblSenha.setAutoscrolls(true);
+		lblSenha.setAlignmentY(1.0f);
+		lblSenha.setBounds(81, 422, 134, 67);
+		contentPane.add(lblSenha);
+		
+		txtBp = new JTextField();
+		txtBp.setHorizontalAlignment(SwingConstants.CENTER);
+		txtBp.setFont(new Font("Tahoma", Font.BOLD, 35));
+		txtBp.setText("BP4532345");
+		txtBp.setBounds(225, 313, 340, 54);
+		contentPane.add(txtBp);
+		txtBp.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Entrar como professor");
+		btnNewButton.setFocusPainted(false);
+		btnNewButton.setForeground(new Color(255, 255, 255));
+		btnNewButton.setContentAreaFilled(false);
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
+		btnNewButton.setBounds(540, 697, 236, 44);
+		contentPane.add(btnNewButton);
+		
+		JLabel lblAluno = new JLabel("PROFESSOR");
+		lblAluno.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblAluno.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblAluno.setForeground(Color.WHITE);
+		lblAluno.setFont(new Font("Javanese Text", Font.BOLD, 99));
+		lblAluno.setAutoscrolls(true);
+		lblAluno.setAlignmentY(1.0f);
+		lblAluno.setBounds(150, 165, 626, 133);
+		contentPane.add(lblAluno);
+		
+		JButton btnEsqueceuASenha = new JButton("Esqueceu a senha?");
+		btnEsqueceuASenha.setForeground(Color.WHITE);
+		btnEsqueceuASenha.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
+		btnEsqueceuASenha.setFocusPainted(false);
+		btnEsqueceuASenha.setContentAreaFilled(false);
+		btnEsqueceuASenha.setBounds(170, 597, 202, 33);
+		contentPane.add(btnEsqueceuASenha);
+		
+		JButton btnPrimeiroAcesso = new JButton("Primeiro acesso");
+		btnPrimeiroAcesso.setForeground(Color.WHITE);
+		btnPrimeiroAcesso.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
+		btnPrimeiroAcesso.setFocusPainted(false);
+		btnPrimeiroAcesso.setContentAreaFilled(false);
+		btnPrimeiroAcesso.setBounds(422, 597, 202, 33);
+		contentPane.add(btnPrimeiroAcesso);
+	}
+}
+

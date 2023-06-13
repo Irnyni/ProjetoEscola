@@ -1,0 +1,280 @@
+package escola;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextArea;
+import java.awt.Color;
+import javax.swing.JPasswordField;
+import java.awt.Cursor;
+import javax.swing.JRadioButton;
+import java.awt.Component;
+import javax.swing.SwingConstants;
+import java.awt.Dimension;
+import java.awt.Button;
+import java.awt.TextArea;
+import javax.swing.JInternalFrame;
+import javax.swing.JToggleButton;
+
+public class Avaliacoes2 extends JFrame {
+	
+
+	private JPanel contentPane;
+	private int cont;
+	private int a;
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Avaliacoes2 frame = new Avaliacoes2();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+		public Avaliacoes2() {
+		setAlwaysOnTop(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(500, 200, 550, 530);
+		contentPane = new JPanel();
+		contentPane.setSize(new Dimension(30, 10));
+		contentPane.setBackground(new Color(47, 0, 0));
+		contentPane.setForeground(new Color(64, 0, 64));
+		contentPane.setBorder(new EmptyBorder(0, 0, 0, 0));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(81, 11, -35, 26);
+		contentPane.add(lblNewLabel);
+		
+				JButton btnSalvar = new JButton("JULIANO SILVA");
+				btnSalvar.setBounds(43, 174, 135, 14);
+				btnSalvar.setForeground(new Color(64, 0, 0));
+				btnSalvar.setBackground(new Color(255, 255, 255));
+				btnSalvar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+				btnSalvar.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+					
+			
+	
+					}
+				});
+				btnSalvar.setFont(new Font("Tahoma", Font.BOLD, 10));
+				contentPane.add(btnSalvar);
+
+		JLabel lblInserirGuich = new JLabel("LANÇAMENTO");
+		lblInserirGuich.setBounds(81, 23, 379, 70);
+		lblInserirGuich.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+		lblInserirGuich.setAutoscrolls(true);
+		lblInserirGuich.setForeground(new Color(255, 255, 255));
+		lblInserirGuich.setFont(new Font("Javanese Text", Font.BOLD, 50));
+		contentPane.add(lblInserirGuich);
+		
+		JButton btnVoltar = new JButton("VOLTAR");
+		btnVoltar.setBounds(30, 444, 148, 39);
+		btnVoltar.setForeground(new Color(64, 0, 0));
+		btnVoltar.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnVoltar.setBackground(new Color(255, 255, 255));
+		contentPane.add(btnVoltar);
+		
+		JLabel lblTurmas = new JLabel("TURMAS");
+		lblTurmas.setForeground(Color.WHITE);
+		lblTurmas.setFont(new Font("Javanese Text", Font.BOLD, 35));
+		lblTurmas.setAutoscrolls(true);
+		lblTurmas.setAlignmentY(1.0f);
+		lblTurmas.setBounds(364, 67, 379, 70);
+		contentPane.add(lblTurmas);
+		
+		JButton btnSeguir = new JButton("SEGUIR");
+		btnSeguir.setForeground(new Color(64, 0, 0));
+		btnSeguir.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnSeguir.setBackground(Color.WHITE);
+		btnSeguir.setBounds(364, 444, 148, 39);
+		contentPane.add(btnSeguir);
+		
+		JLabel lblTurmasParaLanamento = new JLabel("LISTA DOS ALUNOS");
+		lblTurmasParaLanamento.setForeground(Color.WHITE);
+		lblTurmasParaLanamento.setFont(new Font("Javanese Text", Font.BOLD, 15));
+		lblTurmasParaLanamento.setAutoscrolls(true);
+		lblTurmasParaLanamento.setAlignmentY(1.0f);
+		lblTurmasParaLanamento.setBounds(30, 118, 212, 70);
+		contentPane.add(lblTurmasParaLanamento);
+		
+		JToggleButton btnSalvar_1 = new JToggleButton("JULIANO SILVA");
+		btnSalvar_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_1.setBackground(Color.WHITE);
+		btnSalvar_1.setBounds(43, 198, 135, 14);
+		contentPane.add(btnSalvar_1);
+		
+		JButton btnSalvar_2 = new JButton("JULIANO SILVA");
+		btnSalvar_2.setForeground(new Color(64, 0, 0));
+		btnSalvar_2.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_2.setBackground(Color.WHITE);
+		btnSalvar_2.setBounds(43, 223, 135, 14);
+		contentPane.add(btnSalvar_2);
+		
+		JButton btnSalvar_3 = new JButton("JULIANO SILVA");
+		btnSalvar_3.setForeground(new Color(64, 0, 0));
+		btnSalvar_3.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_3.setBackground(Color.WHITE);
+		btnSalvar_3.setBounds(43, 247, 135, 14);
+		contentPane.add(btnSalvar_3);
+		
+		JButton btnSalvar_4 = new JButton("JULIANO SILVA");
+		btnSalvar_4.setForeground(new Color(64, 0, 0));
+		btnSalvar_4.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_4.setBackground(Color.WHITE);
+		btnSalvar_4.setBounds(43, 268, 135, 14);
+		contentPane.add(btnSalvar_4);
+		
+		JButton btnSalvar_5 = new JButton("JULIANO SILVA");
+		btnSalvar_5.setForeground(new Color(64, 0, 0));
+		btnSalvar_5.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5.setBackground(Color.WHITE);
+		btnSalvar_5.setBounds(43, 291, 135, 14);
+		contentPane.add(btnSalvar_5);
+		
+		JButton btnSalvar_5_1 = new JButton("JULIANO SILVA");
+		btnSalvar_5_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_1.setBackground(Color.WHITE);
+		btnSalvar_5_1.setBounds(43, 315, 135, 14);
+		contentPane.add(btnSalvar_5_1);
+		
+		JButton btnSalvar_5_2 = new JButton("JULIANO SILVA");
+		btnSalvar_5_2.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_2.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_2.setBackground(Color.WHITE);
+		btnSalvar_5_2.setBounds(43, 339, 135, 14);
+		contentPane.add(btnSalvar_5_2);
+		
+		JButton btnSalvar_5_3 = new JButton("JULIANO SILVA");
+		btnSalvar_5_3.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_3.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_3.setBackground(Color.WHITE);
+		btnSalvar_5_3.setBounds(43, 363, 135, 14);
+		contentPane.add(btnSalvar_5_3);
+		
+		JButton btnSalvar_5_4 = new JButton("JULIANO SILVA");
+		btnSalvar_5_4.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_4.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_4.setBackground(Color.WHITE);
+		btnSalvar_5_4.setBounds(43, 387, 135, 14);
+		contentPane.add(btnSalvar_5_4);
+		
+		JButton btnSalvar_5_5 = new JButton("JULIANO SILVA");
+		btnSalvar_5_5.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_5.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_5.setBackground(Color.WHITE);
+		btnSalvar_5_5.setBounds(43, 411, 135, 14);
+		contentPane.add(btnSalvar_5_5);
+		
+		JButton btnSalvar_6 = new JButton("");
+		btnSalvar_6.setForeground(new Color(64, 0, 0));
+		btnSalvar_6.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_6.setBackground(Color.WHITE);
+		btnSalvar_6.setBounds(269, 174, 34, 14);
+		contentPane.add(btnSalvar_6);
+		
+		JButton btnSalvar_1_1 = new JButton("");
+		btnSalvar_1_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_1_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_1_1.setBackground(Color.WHITE);
+		btnSalvar_1_1.setBounds(269, 198, 34, 14);
+		contentPane.add(btnSalvar_1_1);
+		
+		JButton btnSalvar_2_1 = new JButton("");
+		btnSalvar_2_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_2_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_2_1.setBackground(Color.WHITE);
+		btnSalvar_2_1.setBounds(269, 223, 34, 14);
+		contentPane.add(btnSalvar_2_1);
+		
+		JButton btnSalvar_3_1 = new JButton("");
+		btnSalvar_3_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_3_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_3_1.setBackground(Color.WHITE);
+		btnSalvar_3_1.setBounds(269, 247, 34, 14);
+		contentPane.add(btnSalvar_3_1);
+		
+		JButton btnSalvar_4_1 = new JButton("");
+		btnSalvar_4_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_4_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_4_1.setBackground(Color.WHITE);
+		btnSalvar_4_1.setBounds(269, 268, 34, 14);
+		contentPane.add(btnSalvar_4_1);
+		
+		JButton btnSalvar_5_6 = new JButton("");
+		btnSalvar_5_6.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_6.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_6.setBackground(Color.WHITE);
+		btnSalvar_5_6.setBounds(269, 291, 34, 14);
+		contentPane.add(btnSalvar_5_6);
+		
+		JButton btnSalvar_5_1_1 = new JButton("");
+		btnSalvar_5_1_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_1_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_1_1.setBackground(Color.WHITE);
+		btnSalvar_5_1_1.setBounds(269, 315, 34, 14);
+		contentPane.add(btnSalvar_5_1_1);
+		
+		JButton btnSalvar_5_2_1 = new JButton("");
+		btnSalvar_5_2_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_2_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_2_1.setBackground(Color.WHITE);
+		btnSalvar_5_2_1.setBounds(269, 339, 34, 14);
+		contentPane.add(btnSalvar_5_2_1);
+		
+		JButton btnSalvar_5_3_1 = new JButton("");
+		btnSalvar_5_3_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_3_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_3_1.setBackground(Color.WHITE);
+		btnSalvar_5_3_1.setBounds(269, 363, 34, 14);
+		contentPane.add(btnSalvar_5_3_1);
+		
+		JButton btnSalvar_5_4_1 = new JButton("");
+		btnSalvar_5_4_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_4_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_4_1.setBackground(Color.WHITE);
+		btnSalvar_5_4_1.setBounds(269, 387, 34, 14);
+		contentPane.add(btnSalvar_5_4_1);
+		
+		JButton btnSalvar_5_5_1 = new JButton("");
+		btnSalvar_5_5_1.setForeground(new Color(64, 0, 0));
+		btnSalvar_5_5_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnSalvar_5_5_1.setBackground(Color.WHITE);
+		btnSalvar_5_5_1.setBounds(269, 411, 34, 14);
+		contentPane.add(btnSalvar_5_5_1);
+		
+		JLabel lblMatruicula = new JLabel("MATRÍCULA");
+		lblMatruicula.setForeground(Color.WHITE);
+		lblMatruicula.setFont(new Font("Javanese Text", Font.BOLD, 15));
+		lblMatruicula.setAutoscrolls(true);
+		lblMatruicula.setAlignmentY(1.0f);
+		lblMatruicula.setBounds(237, 118, 212, 70);
+		contentPane.add(lblMatruicula);
+	}
+}
+

@@ -1,0 +1,211 @@
+package escola;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextArea;
+import java.awt.Color;
+import javax.swing.JPasswordField;
+import java.awt.Cursor;
+import javax.swing.JRadioButton;
+import java.awt.Component;
+import javax.swing.SwingConstants;
+import java.awt.Dimension;
+import java.awt.Button;
+import java.awt.TextArea;
+import javax.swing.JInternalFrame;
+import javax.swing.JToggleButton;
+import java.awt.TextField;
+
+public class ListaEspera3 extends JFrame {
+
+	private JPanel contentPane;
+	private int cont;
+	private int a;
+	private JTextField txtBio;
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					ListaEspera3 frame = new ListaEspera3();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+		public ListaEspera3() {
+		setAlwaysOnTop(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(330, 50, 800, 800);
+		contentPane = new JPanel();
+		contentPane.setSize(new Dimension(30, 10));
+		contentPane.setBackground(new Color(47, 0, 0));
+		contentPane.setForeground(new Color(64, 0, 64));
+		contentPane.setBorder(new EmptyBorder(0, 0, 0, 0));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(81, 11, -35, 26);
+		contentPane.add(lblNewLabel);
+
+		JLabel lblInserirGuich = new JLabel("LISTA DE ESPERA");
+		lblInserirGuich.setBounds(25, 17, 734, 98);
+		lblInserirGuich.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+		lblInserirGuich.setAutoscrolls(true);
+		lblInserirGuich.setForeground(new Color(255, 255, 255));
+		lblInserirGuich.setFont(new Font("Javanese Text", Font.BOLD, 80));
+		contentPane.add(lblInserirGuich);
+		
+		JToggleButton tglbtnBiologia_2 = new JToggleButton("BIOLOGIA 2");
+		tglbtnBiologia_2.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_2.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_2.setBackground(Color.WHITE);
+		tglbtnBiologia_2.setBounds(183, 226, 388, 39);
+		contentPane.add(tglbtnBiologia_2);
+		
+		JLabel lblListaDeTurmas = new JLabel("ORGANIZAR NOVA TURMA");
+		lblListaDeTurmas.setHorizontalAlignment(SwingConstants.CENTER);
+		lblListaDeTurmas.setForeground(Color.WHITE);
+		lblListaDeTurmas.setFont(new Font("Javanese Text", Font.BOLD, 45));
+		lblListaDeTurmas.setAutoscrolls(true);
+		lblListaDeTurmas.setAlignmentY(1.0f);
+		lblListaDeTurmas.setBounds(55, 125, 663, 58);
+		contentPane.add(lblListaDeTurmas);
+		
+		JButton btnSeguir = new JButton("AVANÇAR");
+		btnSeguir.setForeground(new Color(64, 0, 0));
+		btnSeguir.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnSeguir.setBackground(Color.WHITE);
+		btnSeguir.setBounds(561, 672, 181, 39);
+		contentPane.add(btnSeguir);
+		
+		JButton btnVoltar_2 = new JButton("VOLTAR");
+		btnVoltar_2.setForeground(new Color(64, 0, 0));
+		btnVoltar_2.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnVoltar_2.setBackground(Color.WHITE);
+		btnVoltar_2.setBounds(25, 672, 148, 39);
+		contentPane.add(btnVoltar_2);
+		
+		JLabel lblTurma = new JLabel("TURMA");
+		lblTurma.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTurma.setForeground(Color.WHITE);
+		lblTurma.setFont(new Font("Javanese Text", Font.BOLD, 25));
+		lblTurma.setAutoscrolls(true);
+		lblTurma.setAlignmentY(1.0f);
+		lblTurma.setBounds(0, 233, 181, 39);
+		contentPane.add(lblTurma);
+		
+		JLabel lblData = new JLabel("DIAS");
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setForeground(Color.WHITE);
+		lblData.setFont(new Font("Javanese Text", Font.BOLD, 25));
+		lblData.setAutoscrolls(true);
+		lblData.setAlignmentY(1.0f);
+		lblData.setBounds(0, 337, 181, 49);
+		contentPane.add(lblData);
+		
+		JLabel lblQtde = new JLabel("PERÍODO");
+		lblQtde.setHorizontalAlignment(SwingConstants.CENTER);
+		lblQtde.setForeground(Color.WHITE);
+		lblQtde.setFont(new Font("Javanese Text", Font.BOLD, 25));
+		lblQtde.setAutoscrolls(true);
+		lblQtde.setAlignmentY(1.0f);
+		lblQtde.setBounds(0, 427, 173, 76);
+		contentPane.add(lblQtde);
+		
+		txtBio = new JTextField();
+		txtBio.setText("BIO2");
+		txtBio.setHorizontalAlignment(SwingConstants.CENTER);
+		txtBio.setFont(new Font("Tahoma", Font.BOLD, 25));
+		txtBio.setColumns(10);
+		txtBio.setBounds(174, 545, 88, 39);
+		contentPane.add(txtBio);
+		
+		JLabel lblCdigo = new JLabel("CÓDIGO");
+		lblCdigo.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCdigo.setForeground(Color.WHITE);
+		lblCdigo.setFont(new Font("Javanese Text", Font.BOLD, 25));
+		lblCdigo.setAutoscrolls(true);
+		lblCdigo.setAlignmentY(1.0f);
+		lblCdigo.setBounds(0, 547, 173, 49);
+		contentPane.add(lblCdigo);
+		
+		JToggleButton tglbtnBiologia_2_1 = new JToggleButton("SEG");
+		tglbtnBiologia_2_1.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_2_1.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_2_1.setBackground(Color.WHITE);
+		tglbtnBiologia_2_1.setBounds(182, 335, 88, 39);
+		contentPane.add(tglbtnBiologia_2_1);
+		
+		JToggleButton tglbtnBiologia_2_1_1 = new JToggleButton("TER");
+		tglbtnBiologia_2_1_1.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_2_1_1.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_2_1_1.setBackground(Color.WHITE);
+		tglbtnBiologia_2_1_1.setBounds(280, 335, 88, 39);
+		contentPane.add(tglbtnBiologia_2_1_1);
+		
+		JToggleButton tglbtnBiologia_2_1_2 = new JToggleButton("QUA");
+		tglbtnBiologia_2_1_2.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_2_1_2.setBackground(Color.WHITE);
+		tglbtnBiologia_2_1_2.setBounds(378, 333, 88, 39);
+		contentPane.add(tglbtnBiologia_2_1_2);
+		
+		JToggleButton tglbtnBiologia_2_1_3 = new JToggleButton("QUI");
+		tglbtnBiologia_2_1_3.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_2_1_3.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_2_1_3.setBackground(Color.WHITE);
+		tglbtnBiologia_2_1_3.setBounds(476, 333, 88, 39);
+		contentPane.add(tglbtnBiologia_2_1_3);
+		
+		JToggleButton tglbtnBiologia_2_1_4 = new JToggleButton("SEX");
+		tglbtnBiologia_2_1_4.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_2_1_4.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_2_1_4.setBackground(Color.WHITE);
+		tglbtnBiologia_2_1_4.setBounds(574, 335, 88, 39);
+		contentPane.add(tglbtnBiologia_2_1_4);
+		
+		JToggleButton tglbtnBiologia_2_1_5 = new JToggleButton("MANHÃ");
+		tglbtnBiologia_2_1_5.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_2_1_5.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_2_1_5.setBackground(Color.WHITE);
+		tglbtnBiologia_2_1_5.setBounds(173, 439, 148, 39);
+		contentPane.add(tglbtnBiologia_2_1_5);
+		
+		JToggleButton tglbtnBiologia_2_1_5_1 = new JToggleButton("TARDE");
+		tglbtnBiologia_2_1_5_1.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_2_1_5_1.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_2_1_5_1.setBackground(Color.WHITE);
+		tglbtnBiologia_2_1_5_1.setBounds(342, 439, 148, 39);
+		contentPane.add(tglbtnBiologia_2_1_5_1);
+		
+		JToggleButton tglbtnBiologia_2_1_5_2 = new JToggleButton("NOITE");
+		tglbtnBiologia_2_1_5_2.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_2_1_5_2.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_2_1_5_2.setBackground(Color.WHITE);
+		tglbtnBiologia_2_1_5_2.setBounds(514, 439, 148, 39);
+		contentPane.add(tglbtnBiologia_2_1_5_2);
+	}
+}
+

@@ -1,0 +1,147 @@
+package escola;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextArea;
+import java.awt.Color;
+import javax.swing.JPasswordField;
+import java.awt.Cursor;
+import javax.swing.JRadioButton;
+import java.awt.Component;
+import javax.swing.SwingConstants;
+import java.awt.Dimension;
+import java.awt.Button;
+import java.awt.TextArea;
+import javax.swing.JInternalFrame;
+
+public class AndamentoInscricoes extends JFrame {
+
+	private JPanel contentPane;
+	private int cont;
+	private int a;
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					AndamentoInscricoes frame = new AndamentoInscricoes();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+		public AndamentoInscricoes() {
+		setAlwaysOnTop(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(330, 50, 800, 800);
+		contentPane = new JPanel();
+		contentPane.setSize(new Dimension(30, 10));
+		contentPane.setBackground(new Color(47, 0, 0));
+		contentPane.setForeground(new Color(64, 0, 64));
+		contentPane.setBorder(new EmptyBorder(0, 0, 0, 0));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(81, 11, -35, 26);
+		contentPane.add(lblNewLabel);
+		
+				JButton btnSalvar = new JButton("");
+				btnSalvar.setBounds(116, 213, 542, 39);
+				btnSalvar.setForeground(new Color(64, 0, 0));
+				btnSalvar.setBackground(new Color(255, 255, 255));
+				btnSalvar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+				btnSalvar.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+					
+			
+	
+					}
+				});
+				btnSalvar.setFont(new Font("Tahoma", Font.BOLD, 25));
+				contentPane.add(btnSalvar);
+		
+		JButton btnCancelarInscricao = new JButton("");
+		btnCancelarInscricao.setBounds(116, 278, 542, 39);
+		btnCancelarInscricao.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnCancelarInscricao.setForeground(new Color(64, 0, 0));
+		btnCancelarInscricao.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnCancelarInscricao.setBackground(new Color(255, 255, 255));
+		contentPane.add(btnCancelarInscricao);
+		
+		JButton btnVoltar = new JButton("VOLTAR");
+		btnVoltar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Inscricoes frame = new Inscricoes();
+				frame.setVisible(true);
+				dispose();
+			}
+		});
+		btnVoltar.setBounds(600, 680, 148, 39);
+		btnVoltar.setForeground(new Color(64, 0, 0));
+		btnVoltar.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnVoltar.setBackground(new Color(255, 255, 255));
+		contentPane.add(btnVoltar);
+		
+		JButton btnBoletim = new JButton("");
+		btnBoletim.setBounds(116, 339, 542, 39);
+		btnBoletim.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnBoletim.setForeground(new Color(64, 0, 0));
+		btnBoletim.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnBoletim.setBackground(new Color(255, 255, 255));
+		contentPane.add(btnBoletim);
+		
+		JButton btnSolicitarHistorico = new JButton("");
+		btnSolicitarHistorico.setBounds(116, 402, 542, 39);
+		btnSolicitarHistorico.setForeground(new Color(64, 0, 0));
+		btnSolicitarHistorico.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnSolicitarHistorico.setBackground(new Color(255, 255, 255));
+		contentPane.add(btnSolicitarHistorico);
+		
+		JButton btnVisualizarGrade = new JButton("");
+		btnVisualizarGrade.setBounds(116, 463, 542, 39);
+		btnVisualizarGrade.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnVisualizarGrade.setForeground(new Color(64, 0, 0));
+		btnVisualizarGrade.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnVisualizarGrade.setBackground(new Color(255, 255, 255));
+		contentPane.add(btnVisualizarGrade);
+		
+		JLabel lblInscrcoes = new JLabel("ANDAMENTO");
+		lblInscrcoes.setForeground(Color.WHITE);
+		lblInscrcoes.setFont(new Font("Javanese Text", Font.BOLD, 99));
+		lblInscrcoes.setAutoscrolls(true);
+		lblInscrcoes.setAlignmentY(1.0f);
+		lblInscrcoes.setBounds(56, 30, 688, 129);
+		contentPane.add(lblInscrcoes);
+	}
+}
+

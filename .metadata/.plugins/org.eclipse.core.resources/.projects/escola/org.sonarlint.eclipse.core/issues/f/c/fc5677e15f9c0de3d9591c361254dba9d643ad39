@@ -1,0 +1,85 @@
+
+µ
+java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ ÒşüÿÿÿÿHŒRCRITICALZ
+CODE_SMELL
+_
+java:S1128"3Remove this unused import 'javax.swing.JTextField'.(İË—H°RMINORZ
+CODE_SMELL
+d
+java:S1128"8Remove this unused import 'java.util.GregorianCalendar'.(€û½H©RMINORZ
+CODE_SMELL
+Y
+java:S1068&"(Remove this unused "cont" private field.(ƒş«úÿÿÿÿH«RMAJORZ
+CODE_SMELL
+h
+java:S1128"7Remove this unused import 'javax.swing.SwingConstants'.(âù­şÿÿÿÿHˆRMINORZ
+CODE_SMELL
+{
+java:S1192Q"GDefine a constant instead of duplicating this literal "Tahoma" 6 times.(úäÙÚúÿÿÿÿHRCRITICALZ
+CODE_SMELL
+[
+java:S1128"/Remove this unused import 'java.util.Calendar'.(ÿÛö´H•RMINORZ
+CODE_SMELL
+\
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒH§RMINORZ
+CODE_SMELL
+b
+java:S1128"7Remove this unused import 'javax.swing.JPasswordField'.(©€ßH†RMINORZ
+CODE_SMELL
+Y
+java:S1604p"(Make this anonymous inner class a lambda(•«±ñÿÿÿÿÿH¶RMAJORZ
+CODE_SMELL
+V
+java:S1068'"%Remove this unused "a" private field.(Ş‹®øÿÿÿÿH´RMAJORZ
+CODE_SMELL
+c
+java:S1128"2Remove this unused import 'javax.swing.JTextArea'.(ô„ûìıÿÿÿÿHRMINORZ
+CODE_SMELL
+Y
+java:S1604^"(Make this anonymous inner class a lambda(‚•ÑÙıÿÿÿÿH”RMAJORZ
+CODE_SMELL
+Z
+java:S1128"/Remove this unused import 'java.sql.Timestamp'.(èò½+H²RMINORZ
+CODE_SMELL
+V
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½ÊH­RMINORZ
+CODE_SMELL
+Y
+java:S1604J"(Make this anonymous inner class a lambda(¨ƒ‹ôıÿÿÿÿH¯RMAJORZ
+CODE_SMELL
+Z
+java:S1604‚"(Make this anonymous inner class a lambda(§õ®ÄùÿÿÿÿHRMAJORZ
+CODE_SMELL
+_
+java:S1128 ".Remove this unused import 'java.awt.TextArea'.(¨ÖÚ„ùÿÿÿÿHœRMINORZ
+CODE_SMELL
+}
+java:S32527"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿH„RCRITICALZ
+CODE_SMELL
+h
+java:S1128!"7Remove this unused import 'javax.swing.JInternalFrame'.(ëîÃóıÿÿÿÿHRMINORZ
+CODE_SMELL
+Y
+java:S1604)"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH›RMAJORZ
+CODE_SMELL
+^
+java:S1128"2Remove this unused import 'java.awt.BorderLayout'.(íÿì°HÿRMINORZ
+CODE_SMELL
+`
+java:S1128"/Remove this unused import 'java.util.TimeZone'.(à‡ÕùÿÿÿÿH—RMINORZ
+CODE_SMELL
+¶
+java:S1186ƒ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ ÒşüÿÿÿÿH‚RCRITICALZ
+CODE_SMELL
+f
+java:S1128"5Remove this unused import 'javax.swing.JRadioButton'.(ÛÕÚºüÿÿÿÿHŠRMINORZ
+CODE_SMELL
+]
+java:S1128",Remove this unused import 'java.awt.Button'.(øû¬éÿÿÿÿÿH™RMINORZ
+CODE_SMELL
+µ
+java:S1186_"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ ÒşüÿÿÿÿH’RCRITICALZ
+CODE_SMELL
+µ
+java:S1186q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ ÒşüÿÿÿÿH¥RCRITICALZ
+CODE_SMELL

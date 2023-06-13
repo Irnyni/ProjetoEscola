@@ -1,0 +1,225 @@
+package view;
+
+import java.awt.BorderLayout;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextArea;
+import java.awt.Color;
+import javax.swing.JPasswordField;
+import java.awt.Cursor;
+import javax.swing.JRadioButton;
+import java.awt.Component;
+import javax.swing.SwingConstants;
+import java.awt.Dimension;
+import java.awt.Button;
+import java.awt.TextArea;
+import javax.swing.JInternalFrame;
+import java.awt.TextField;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.MatteBorder;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+import javax.swing.JEditorPane;
+import javax.swing.JToggleButton;
+import java.awt.Choice;
+import java.awt.Checkbox;
+
+
+
+public class Disciplina3 extends JFrame {
+
+	private JPanel contentPane;
+	private int cont;
+	private int a;
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Disciplina3 frame = new Disciplina3();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+		public Disciplina3() {
+		setAlwaysOnTop(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(330, 50, 800, 800);
+		contentPane = new JPanel();
+		contentPane.setSize(new Dimension(30, 10));
+		contentPane.setBackground(new Color(47, 0, 0));
+		contentPane.setForeground(new Color(0, 0, 0));
+		contentPane.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, new Color(192, 192, 192), null, null, null));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(81, 11, -35, 26);
+		contentPane.add(lblNewLabel);
+
+		JLabel lblInserirGuich = new JLabel("DISCIPLINA");
+		lblInserirGuich.setHorizontalAlignment(SwingConstants.CENTER);
+		lblInserirGuich.setBounds(50, 11, 668, 145);
+		lblInserirGuich.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+		lblInserirGuich.setAutoscrolls(true);
+		lblInserirGuich.setForeground(new Color(255, 255, 255));
+		lblInserirGuich.setFont(new Font("Javanese Text", Font.BOLD, 99));
+		contentPane.add(lblInserirGuich);
+		
+		JButton btnVoltar = new JButton("EDITAR");
+		btnVoltar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Disciplina2 frame = new Disciplina2();
+				frame.setVisible(true);
+				dispose();
+			}
+		});
+		btnVoltar.setBounds(601, 690, 148, 39);
+		btnVoltar.setForeground(new Color(64, 0, 0));
+		btnVoltar.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnVoltar.setBackground(new Color(255, 255, 255));
+		contentPane.add(btnVoltar);
+		
+		JButton btnVoltar_2 = new JButton("VOLTAR");
+		btnVoltar_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Gestao frame = new Gestao();
+				frame.setVisible(true);
+				dispose();
+			
+			}
+		});
+		btnVoltar_2.setForeground(new Color(64, 0, 0));
+		btnVoltar_2.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnVoltar_2.setBackground(Color.WHITE);
+		btnVoltar_2.setBounds(32, 690, 148, 39);
+		contentPane.add(btnVoltar_2);
+		
+		JToggleButton tglbtnBiologia = new JToggleButton("BIOLOGIA ");
+		tglbtnBiologia.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia.setBackground(Color.WHITE);
+		tglbtnBiologia.setBounds(32, 338, 216, 39);
+		contentPane.add(tglbtnBiologia);
+		
+		JToggleButton tglbtnCincias = new JToggleButton("CIÊNCIAS ");
+		tglbtnCincias.setForeground(new Color(64, 0, 0));
+		tglbtnCincias.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnCincias.setBackground(Color.WHITE);
+		tglbtnCincias.setBounds(32, 416, 216, 39);
+		contentPane.add(tglbtnCincias);
+		
+		JToggleButton tglbtnBiologia_1 = new JToggleButton("HISTÓRIA");
+		tglbtnBiologia_1.setForeground(new Color(64, 0, 0));
+		tglbtnBiologia_1.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBiologia_1.setBackground(Color.WHITE);
+		tglbtnBiologia_1.setBounds(32, 487, 216, 39);
+		contentPane.add(tglbtnBiologia_1);
+		
+		JToggleButton tglbtnCiencias = new JToggleButton("MATEMÁTICA");
+		tglbtnCiencias.setForeground(new Color(64, 0, 0));
+		tglbtnCiencias.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnCiencias.setBackground(Color.WHITE);
+		tglbtnCiencias.setBounds(33, 563, 216, 39);
+		contentPane.add(tglbtnCiencias);
+		
+		JLabel lblDisciplina = new JLabel("DISCIPLINAS");
+		lblDisciplina.setHorizontalAlignment(SwingConstants.CENTER);
+		lblDisciplina.setForeground(Color.WHITE);
+		lblDisciplina.setFont(new Font("Javanese Text", Font.BOLD, 25));
+		lblDisciplina.setAutoscrolls(true);
+		lblDisciplina.setAlignmentY(1.0f);
+		lblDisciplina.setBounds(32, 255, 217, 58);
+		contentPane.add(lblDisciplina);
+		
+		TextField textField = new TextField();
+		textField.setBounds(50, 162, 497, 39);
+		contentPane.add(textField);
+		
+		JToggleButton tglbtnBuscar = new JToggleButton("BUSCAR");
+		tglbtnBuscar.setForeground(new Color(64, 0, 0));
+		tglbtnBuscar.setFont(new Font("Tahoma", Font.BOLD, 25));
+		tglbtnBuscar.setBackground(Color.WHITE);
+		tglbtnBuscar.setBounds(575, 162, 148, 39);
+		contentPane.add(tglbtnBuscar);
+		
+		JLabel lblDisciplina_2 = new JLabel("DESCRIÇÃO");
+		lblDisciplina_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblDisciplina_2.setForeground(Color.WHITE);
+		lblDisciplina_2.setFont(new Font("Javanese Text", Font.BOLD, 25));
+		lblDisciplina_2.setAutoscrolls(true);
+		lblDisciplina_2.setAlignmentY(1.0f);
+		lblDisciplina_2.setBounds(420, 255, 303, 58);
+		contentPane.add(lblDisciplina_2);
+		
+		JButton btnExcluir = new JButton("EXCLUIR");
+		btnExcluir.setForeground(new Color(64, 0, 0));
+		btnExcluir.setFont(new Font("Tahoma", Font.BOLD, 25));
+		btnExcluir.setBackground(Color.WHITE);
+		btnExcluir.setBounds(301, 690, 148, 39);
+		contentPane.add(btnExcluir);
+		
+		TextField textField_1_4 = new TextField();
+		textField_1_4.setBounds(420, 338, 303, 39);
+		contentPane.add(textField_1_4);
+		
+		TextField textField_1_4_1 = new TextField();
+		textField_1_4_1.setBounds(420, 416, 303, 39);
+		contentPane.add(textField_1_4_1);
+		
+		TextField textField_1_4_2 = new TextField();
+		textField_1_4_2.setBounds(420, 487, 303, 39);
+		contentPane.add(textField_1_4_2);
+		
+		TextField textField_1_4_3 = new TextField();
+		textField_1_4_3.setBounds(420, 563, 303, 39);
+		contentPane.add(textField_1_4_3);
+		
+		JLabel lblDisciplina_1 = new JLabel("SIGLA");
+		lblDisciplina_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblDisciplina_1.setForeground(Color.WHITE);
+		lblDisciplina_1.setFont(new Font("Javanese Text", Font.BOLD, 25));
+		lblDisciplina_1.setAutoscrolls(true);
+		lblDisciplina_1.setAlignmentY(1.0f);
+		lblDisciplina_1.setBounds(287, 255, 95, 58);
+		contentPane.add(lblDisciplina_1);
+		
+		TextField textField_1 = new TextField();
+		textField_1.setBounds(287, 338, 95, 39);
+		contentPane.add(textField_1);
+		
+		TextField textField_1_1 = new TextField();
+		textField_1_1.setBounds(287, 416, 95, 39);
+		contentPane.add(textField_1_1);
+		
+		TextField textField_1_2 = new TextField();
+		textField_1_2.setBounds(287, 487, 95, 39);
+		contentPane.add(textField_1_2);
+		
+		TextField textField_1_3 = new TextField();
+		textField_1_3.setBounds(287, 563, 95, 39);
+		contentPane.add(textField_1_3);
+	}
+}
+

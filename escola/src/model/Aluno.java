@@ -9,6 +9,13 @@ public class Aluno {
 	private String curso;
 	private String cpf;
 	private String situacaoDisc;
+	private int idade;
+	public int getIdade() {
+		return idade;
+	}
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
 	public String getNomeAluno() {
 		return nomeAluno;
 	}
@@ -55,6 +62,8 @@ public class Aluno {
 		return "Aluno [nomeAluno=" + nomeAluno + ", prontuario=" + prontuario + ", curso=" + curso + ", cpf=" + cpf
 				+ ", situacaoDisc=" + situacaoDisc + "]";
 	}
+
+
 	
 	
 }

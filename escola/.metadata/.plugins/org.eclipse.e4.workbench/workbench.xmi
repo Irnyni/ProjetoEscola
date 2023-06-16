@@ -74,6 +74,10 @@
           <tags>persp.viewSC:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
           <tags>persp.viewSC:org.eclipse.ant.ui.views.AntView</tags>
+          <tags>persp.actionSet:com.yattasolutions.umllab.introActionSet</tags>
+          <tags>persp.actionSet:com.yattasolutions.umllab.reporting.actionSet1</tags>
+          <tags>persp.actionSet:com.yattasolutions.umllab.registrationActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.m2m.qvt.oml.runtime.actions</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_KImWIAh3Ee6106t9jWCUEA" selectedElement="_KImWIQh3Ee6106t9jWCUEA" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_KImWIQh3Ee6106t9jWCUEA" containerData="2500" selectedElement="_KImWIgh3Ee6106t9jWCUEA">
               <children xsi:type="basic:PartStack" xmi:id="_KImWIgh3Ee6106t9jWCUEA" elementId="left" containerData="6000" selectedElement="_KImWIwh3Ee6106t9jWCUEA">
@@ -115,8 +119,8 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_KImWLAh3Ee6106t9jWCUEA" containerData="7500">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_KImWLQh3Ee6106t9jWCUEA" containerData="7500" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_KImWLAh3Ee6106t9jWCUEA" containerData="7500" selectedElement="_KImWLQh3Ee6106t9jWCUEA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_KImWLQh3Ee6106t9jWCUEA" containerData="7500" selectedElement="_KImWLgh3Ee6106t9jWCUEA" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_KImWLgh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_KIN7oAh3Ee6106t9jWCUEA"/>
                 <children xsi:type="basic:PartStack" xmi:id="_KImWLwh3Ee6106t9jWCUEA" elementId="right" containerData="2500" selectedElement="_KImWMAh3Ee6106t9jWCUEA">
                   <tags>org.eclipse.e4.secondaryNavigationStack</tags>
@@ -220,10 +224,16 @@
       <tags>View</tags>
       <tags>categoryTag:Help</tags>
     </sharedElements>
-    <sharedElements xsi:type="advanced:Area" xmi:id="_KIN7oAh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.editorss">
-      <children xsi:type="basic:PartStack" xmi:id="_KIN7oQh3Ee6106t9jWCUEA" elementId="org.eclipse.e4.primaryDataStack">
+    <sharedElements xsi:type="advanced:Area" xmi:id="_KIN7oAh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.editorss" selectedElement="_KIN7oQh3Ee6106t9jWCUEA">
+      <children xsi:type="basic:PartStack" xmi:id="_KIN7oQh3Ee6106t9jWCUEA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_ibfrsAvMEe66qIRg0RValA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <children xsi:type="basic:Part" xmi:id="_ibfrsAvMEe66qIRg0RValA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Getting started with UML Lab" iconURI="platform:/plugin/com.yattasolutions.umllab.intro/intro/img/YattaLogo_16x16.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.yattasolutions.umllab.intro.IntroEditor&quot; name=&quot;Getting started with UML Lab&quot; partName=&quot;Getting started with UML Lab&quot; title=&quot;Getting started with UML Lab&quot; tooltip=&quot;Getting started with UML Lab&quot;>&#xD;&#xA;&lt;input factoryID=&quot;com.yattasolutions.umllab.intro.IntroEditor.factory&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>com.yattasolutions.umllab.intro.IntroEditor</tags>
+        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_KIV3cAh3Ee6106t9jWCUEA" elementId="org.eclipse.jdt.ui.PackageExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Package Explorer" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/package.png" tooltip="" closeable="true">
@@ -373,13 +383,13 @@
       <tags>categoryTag:CodeTogether</tags>
     </sharedElements>
     <trimBars xmi:id="_Jk7BUgh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.platform">
-      <children xsi:type="menu:ToolBar" xmi:id="_J-PgQAh3Ee6106t9jWCUEA">
+      <children xsi:type="menu:ToolBar" xmi:id="_J-PgQAh3Ee6106t9jWCUEA" visible="false">
         <tags>toolbarSeparator</tags>
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J-RVcAh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_J-YqMAh3Ee6106t9jWCUEA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Jlj6pQh3Ee6106t9jWCUEA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hL4d8AvMEe66qIRg0RValA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Jlj6pQh3Ee6106t9jWCUEA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J-R8gAh3Ee6106t9jWCUEA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -407,7 +417,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J-Sjkgh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_J-bGcAh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_JljTnQh3Ee6106t9jWCUEA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hL8vYAvMEe66qIRg0RValA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_JljTnQh3Ee6106t9jWCUEA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J-Sjkwh3Ee6106t9jWCUEA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -419,6 +429,10 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J-TxsAh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_hLn_QAvMEe66qIRg0RValA" elementId="group.file" toBeRendered="false">
+        <tags>toolbarSeparator</tags>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_hLn_QQvMEe66qIRg0RValA" elementId="group.file" toBeRendered="false"/>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_KBVQgAh3Ee6106t9jWCUEA" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -695,6 +709,10 @@
     <bindings xmi:id="_JmE36Qh3Ee6106t9jWCUEA" keySequence="ALT+SHIFT+D O" command="_Jlhehgh3Ee6106t9jWCUEA"/>
     <bindings xmi:id="_JmE36gh3Ee6106t9jWCUEA" keySequence="ALT+SHIFT+D P" command="_Jlj6oQh3Ee6106t9jWCUEA"/>
     <bindings xmi:id="_JmE36wh3Ee6106t9jWCUEA" keySequence="ALT+SHIFT+D Q" command="_Jlg3hgh3Ee6106t9jWCUEA"/>
+    <bindings xmi:id="_gSILcAvMEe66qIRg0RValA" keySequence="CTRL+-" command="_gRmnGAvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSIyggvMEe66qIRg0RValA" keySequence="CTRL+SHIFT+F" command="_gRmnGgvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSKAoAvMEe66qIRg0RValA" keySequence="ALT+SHIFT+G" command="_gRmAFgvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSND8QvMEe66qIRg0RValA" keySequence="CTRL+=" command="_gRlY9AvMEe66qIRg0RValA"/>
   </bindingTables>
   <bindingTables xmi:id="_Jl7G4Ah3Ee6106t9jWCUEA" elementId="com.genuitec.eclipse.inlinesearch.context" bindingContext="_JlozBAh3Ee6106t9jWCUEA">
     <bindings xmi:id="_Jl7G4Qh3Ee6106t9jWCUEA" keySequence="CTRL+BS" command="_JliFcgh3Ee6106t9jWCUEA"/>
@@ -897,6 +915,43 @@
   <bindingTables xmi:id="_KITbMQh3Ee6106t9jWCUEA" bindingContext="_KITbMAh3Ee6106t9jWCUEA"/>
   <bindingTables xmi:id="_KITbMwh3Ee6106t9jWCUEA" bindingContext="_KITbMgh3Ee6106t9jWCUEA"/>
   <bindingTables xmi:id="_KITbNQh3Ee6106t9jWCUEA" bindingContext="_KITbNAh3Ee6106t9jWCUEA"/>
+  <bindingTables xmi:id="_gSD6AAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagrameditor.context" bindingContext="_gRqRZQvMEe66qIRg0RValA">
+    <bindings xmi:id="_gSG9UAvMEe66qIRg0RValA" keySequence="CTRL+SHIFT+Q" command="_gRmnEAvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSILcgvMEe66qIRg0RValA" keySequence="CTRL+SHIFT+A" command="_gRmADAvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSIygAvMEe66qIRg0RValA" keySequence="CTRL+SHIFT+C" command="_gRkx4AvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSNrAAvMEe66qIRg0RValA" keySequence="CTRL+SHIFT+Y" command="_gRmAGAvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSNrAQvMEe66qIRg0RValA" keySequence="CTRL+SHIFT+Z" command="_gRmABwvMEe66qIRg0RValA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_gSHkYAvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.metamodelBrowser" bindingContext="_gRqRYQvMEe66qIRg0RValA">
+    <bindings xmi:id="_gSHkYQvMEe66qIRg0RValA" keySequence="ALT+CTRL+F" command="_gRlY5QvMEe66qIRg0RValA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_gSHkYgvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.editor.ui.context" bindingContext="_gRqRYwvMEe66qIRg0RValA">
+    <bindings xmi:id="_gSHkYwvMEe66qIRg0RValA" keySequence="CTRL+7" command="_gRl_-gvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSILcQvMEe66qIRg0RValA" keySequence="CTRL+/" command="_gRl_-gvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSIygQvMEe66qIRg0RValA" keySequence="CTRL+SHIFT+C" command="_gRl_-gvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSLOwAvMEe66qIRg0RValA" keySequence="CTRL+O" command="_gRlY8wvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSQuUAvMEe66qIRg0RValA" keySequence="F3" command="_gRmnEgvMEe66qIRg0RValA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_gSJZkAvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.window.context" bindingContext="_gRqRYAvMEe66qIRg0RValA">
+    <bindings xmi:id="_gSJZkQvMEe66qIRg0RValA" keySequence="CTRL+SHIFT+G" command="_gRmnIAvMEe66qIRg0RValA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_gSLOwQvMEe66qIRg0RValA" elementId="org.eclipse.xpand.ui.XpandEditorScope" bindingContext="_gRqRYgvMEe66qIRg0RValA">
+    <bindings xmi:id="_gSLOwgvMEe66qIRg0RValA" keySequence="ALT+SHIFT+R" command="_gRmAGgvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSMc4AvMEe66qIRg0RValA" keySequence="ALT+SHIFT+T" command="_gRmnIQvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSND8AvMEe66qIRg0RValA" keySequence="CTRL+&lt;" command="_gRlY7AvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSND8gvMEe66qIRg0RValA" keySequence="CTRL+>" command="_gRkx4wvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSTxoAvMEe66qIRg0RValA" keySequence="COMMAND+&lt;" command="_gRlY7AvMEe66qIRg0RValA"/>
+    <bindings xmi:id="_gSTxoQvMEe66qIRg0RValA" keySequence="COMMAND+>" command="_gRkx4wvMEe66qIRg0RValA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_gSRVYAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.diagram.context" bindingContext="_gRqRZAvMEe66qIRg0RValA">
+    <bindings xmi:id="_gSRVYQvMEe66qIRg0RValA" keySequence="F5" command="_gRkKyAvMEe66qIRg0RValA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_grHTMQvMEe66qIRg0RValA" bindingContext="_grHTMAvMEe66qIRg0RValA"/>
+  <bindingTables xmi:id="_grH6QQvMEe66qIRg0RValA" bindingContext="_grH6QAvMEe66qIRg0RValA"/>
+  <bindingTables xmi:id="_grIhUAvMEe66qIRg0RValA" bindingContext="_grH6QgvMEe66qIRg0RValA"/>
+  <bindingTables xmi:id="_grIhUgvMEe66qIRg0RValA" bindingContext="_grIhUQvMEe66qIRg0RValA"/>
+  <bindingTables xmi:id="_grJIYQvMEe66qIRg0RValA" bindingContext="_grJIYAvMEe66qIRg0RValA"/>
+  <bindingTables xmi:id="_grJvcQvMEe66qIRg0RValA" bindingContext="_grJvcAvMEe66qIRg0RValA"/>
   <rootContext xmi:id="_Jk7BWgh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_Jk7BWwh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
       <children xmi:id="_Jk7BXAh3Ee6106t9jWCUEA" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.platform" name="%bindingcontext.name.bindingView"/>
@@ -916,6 +971,8 @@
         <children xmi:id="_JlozGgh3Ee6106t9jWCUEA" elementId="org.eclipse.ant.ui.AntEditorScope" name="Editing Ant Buildfiles" description="Editing Ant Buildfiles Context"/>
         <children xmi:id="_JlozHQh3Ee6106t9jWCUEA" elementId="org.eclipse.jdt.ui.propertiesEditorScope" name="Editing Properties Files" description="Editing Properties Files Context"/>
         <children xmi:id="_JlozIAh3Ee6106t9jWCUEA" elementId="com.genuitec.eclipse.genericeditor.genericEditorContext" name="in CodeTogether Remote Editor" description="When editing in the CodeTogether Remote Editor"/>
+        <children xmi:id="_gRqRYgvMEe66qIRg0RValA" elementId="org.eclipse.xpand.ui.XpandEditorScope" name="Editing Xpand Files" description="Editing Xpand Files Scope"/>
+        <children xmi:id="_gRqRYwvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.editor.ui.context" name="In QVT Operational Editor" description="QVT Operational Editing context"/>
       </children>
       <children xmi:id="_JlozBwh3Ee6106t9jWCUEA" elementId="org.eclipse.debug.ui.console" name="In I/O Console" description="In I/O console"/>
       <children xmi:id="_JlozCAh3Ee6106t9jWCUEA" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" name="In Terminal View" description="Show modified keyboard shortcuts in context menu"/>
@@ -933,8 +990,14 @@
       <children xmi:id="_JlozHgh3Ee6106t9jWCUEA" elementId="org.eclipse.egit.ui.RepositoriesView" name="In Git Repositories View">
         <children xmi:id="_JlozHwh3Ee6106t9jWCUEA" elementId="org.eclipse.egit.ui.RepositoriesView.SingleRepository" name="In Git Repositories View"/>
       </children>
+      <children xmi:id="_gRqRYAvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.window.context" name="UML Lab Context" description="Base context for UML Lab">
+        <children xmi:id="_gRqRZAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.diagram.context" name="in UML Lab editor" description="Parent Context for all UML Lab editors">
+          <children xmi:id="_gRqRZQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagrameditor.context" name="in UML Lab classdiagram editor" description="Context for the UML Lab classdiagram editor"/>
+        </children>
+      </children>
     </children>
     <children xmi:id="_Jk7BXQh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.contexts.dialog" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs" description="A dialog is open"/>
+    <children xmi:id="_gRqRYQvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.metamodelBrowser" name="Metamodel Explorer View"/>
   </rootContext>
   <rootContext xmi:id="_JlozBgh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.contexts.actionSet" name="Action Set" description="Parent context for action sets"/>
   <rootContext xmi:id="_JlozDAh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.contexts.workbenchMenu" name="Workbench Menu" description="When no Workbench windows are active"/>
@@ -974,28 +1037,34 @@
   <rootContext xmi:id="_KITbMAh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.edit.text.actionSet.presentation" name="Auto::org.eclipse.ui.edit.text.actionSet.presentation"/>
   <rootContext xmi:id="_KITbMgh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.ui.SearchActionSet" name="Auto::org.eclipse.pde.ui.SearchActionSet"/>
   <rootContext xmi:id="_KITbNAh3Ee6106t9jWCUEA" elementId="org.eclipse.wb.core.ui.actionset" name="Auto::org.eclipse.wb.core.ui.actionset"/>
-  <descriptors xmi:id="_JokyQAh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.parts.PreferenceSpyPart" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" label="Preference Spy" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/$nl$/icons/preference_spy.png" closeable="true" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.parts.PreferenceSpyPart" description="Spy to display preferences">
+  <rootContext xmi:id="_grHTMAvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.introActionSet" name="Auto::com.yattasolutions.umllab.introActionSet"/>
+  <rootContext xmi:id="_grH6QAvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.reporting.actionSet1" name="Auto::com.yattasolutions.umllab.reporting.actionSet1"/>
+  <rootContext xmi:id="_grH6QgvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.registrationActionSet" name="Auto::com.yattasolutions.umllab.registrationActionSet"/>
+  <rootContext xmi:id="_grIhUQvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.editor.ui.actionSet.navigation" name="Auto::org.eclipse.m2m.qvt.oml.editor.ui.actionSet.navigation"/>
+  <rootContext xmi:id="_grJIYAvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.runtime.actions" name="Auto::org.eclipse.m2m.qvt.oml.runtime.actions"/>
+  <rootContext xmi:id="_grJvcAvMEe66qIRg0RValA" elementId="org.eclipse.xpand.ui.refactoring.CodingActionSet" name="Auto::org.eclipse.xpand.ui.refactoring.CodingActionSet"/>
+  <descriptors xmi:id="_gWKW4AvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.parts.PreferenceSpyPart" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" label="Preference Spy" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/$nl$/icons/preference_spy.png" closeable="true" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.parts.PreferenceSpyPart" description="Spy to display preferences">
     <persistedState key="perstistState" value="false"/>
     <tags>Spy</tags>
-    <toolbar xmi:id="_JokyRgh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.toolbar" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences">
-      <children xsi:type="menu:ToolControl" xmi:id="_JokyRwh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.toolcontrol.layout" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.handler.ToggleLayoutControl"/>
-      <children xsi:type="menu:ToolBarSeparator" xmi:id="_JokySAh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.0" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_JokySQh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.showall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/show_all_preferences.png">
+    <toolbar xmi:id="_gWKW5gvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.toolbar" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences">
+      <children xsi:type="menu:ToolControl" xmi:id="_gWKW5wvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.toolcontrol.layout" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.handler.ToggleLayoutControl"/>
+      <children xsi:type="menu:ToolBarSeparator" xmi:id="_gWKW6AvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.0" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
+      <children xsi:type="menu:HandledToolItem" xmi:id="_gWKW6QvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.showall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/show_all_preferences.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_ufxRsHY2EeSuTdKDH5hMwg"/>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_JokySgh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.toolcontrol.trace" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.handler.TogglePreferenceTraceControl"/>
-      <children xsi:type="menu:ToolBarSeparator" xmi:id="_JokySwh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.1" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_JokyTAh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.expandall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/expandall.png">
+      <children xsi:type="menu:ToolControl" xmi:id="_gWKW6gvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.toolcontrol.trace" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" contributionURI="bundleclass://org.eclipse.pde.spy.preferences/org.eclipse.pde.spy.preferences.handler.TogglePreferenceTraceControl"/>
+      <children xsi:type="menu:ToolBarSeparator" xmi:id="_gWKW6wvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.1" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
+      <children xsi:type="menu:HandledToolItem" xmi:id="_gWKW7AvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.expandall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/expandall.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_4NM_IH_gEeSk-4v3KnNHPw"/>
       </children>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_JokyTQh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.collapseall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/collapseall.png">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_gWKW7QvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.collapseall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/collapseall.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_68UQwH_gEeSk-4v3KnNHPw"/>
       </children>
-      <children xsi:type="menu:ToolBarSeparator" xmi:id="_JokyTgh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.2" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_JokyTwh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.removeentry" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/remove_co.png">
+      <children xsi:type="menu:ToolBarSeparator" xmi:id="_gWKW7gvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.toolbarseparator.2" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences"/>
+      <children xsi:type="menu:HandledToolItem" xmi:id="_gWKW7wvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.removeentry" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/remove_co.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_iGEkYGxiEeSQ7v0akw7aRA"/>
       </children>
-      <children xsi:type="menu:HandledToolItem" xmi:id="_JokyUAh3Ee6106t9jWCUEA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.removeall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/removeall_co.png">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_gWKW8AvMEe66qIRg0RValA" elementId="org.eclipse.pde.spy.preferences.handledtoolitem.removeall" contributorURI="platform:/plugin/org.eclipse.pde.spy.preferences" iconURI="platform:/plugin/org.eclipse.pde.spy.preferences/icons/removeall_co.png">
         <command href="platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi#_eBGTEGxiEeSQ7v0akw7aRA"/>
       </children>
     </toolbar>
@@ -1432,6 +1501,42 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.wb.core"/>
     <tags>View</tags>
     <tags>categoryTag:WindowBuilder</tags>
+  </descriptors>
+  <descriptors xmi:id="_gqyjEAvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.ui.callhierarchyview" label="Model Call Hierarchy" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/elcl16/ch_callers.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.yattasolutions.architecturereview.ui.CallHierarchyView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.yattasolutions.architecturereview.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_gqzxMAvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.hintView" label="UML Lab Hints" iconURI="platform:/plugin/com.yattasolutions.umllab.ui/icons/YattaLogo_16x16.png" tooltip="" category="UML Lab" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.yattasolutions.obf.ib.a"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.yattasolutions.diagrams.editor"/>
+    <tags>View</tags>
+    <tags>categoryTag:UML Lab</tags>
+  </descriptors>
+  <descriptors xmi:id="_gq0_UAvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.views.treeview" label="UML Lab Tree" iconURI="platform:/plugin/com.yattasolutions.umllab.ui/icons/YattaLogo_16x16.png" tooltip="" allowMultiple="true" category="UML Lab" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.yattasolutions.obf.of.g"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.yattasolutions.umllab.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:UML Lab</tags>
+  </descriptors>
+  <descriptors xmi:id="_gq1mYAvMEe66qIRg0RValA" elementId="org.eclipse.gef.ui.palette_view" label="Palette" iconURI="platform:/plugin/org.eclipse.gef/icons/palette_view.gif" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.gef.ui.views.palette.PaletteView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.gef"/>
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_gq3bkAvMEe66qIRg0RValA" elementId="org.eclipse.m2m.internal.qvt.oml.common.views.MetamodelBrowserView" label="Metamodel Explorer" iconURI="platform:/plugin/org.eclipse.m2m.qvt.oml.common.ui/icons/metamodels.gif" tooltip="" category="QVT Operational" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.m2m.internal.qvt.oml.common.ui.views.MetamodelBrowserView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.m2m.qvt.oml.common.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:QVT Operational</tags>
+  </descriptors>
+  <descriptors xmi:id="_gq5QwAvMEe66qIRg0RValA" elementId="org.eclipse.m2m.internal.qvt.oml.debug.ui.views.trace" label="QVT Operational Traces" iconURI="platform:/plugin/org.eclipse.m2m.qvt.oml.debug.ui/icons/trace-view.gif" tooltip="" category="QVT Operational" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.m2m.internal.qvt.oml.debug.ui.views.TraceViewPart"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.m2m.qvt.oml.debug.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:QVT Operational</tags>
   </descriptors>
   <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
     <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
@@ -2415,6 +2520,194 @@
   <commands xmi:id="_J7FekQh3Ee6106t9jWCUEA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Display" commandName="Display" description="Display Result of Evaluating Selected Text" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
   <commands xmi:id="_J7GFoAh3Ee6106t9jWCUEA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Inspect" commandName="Inspect" description="Inspect Result of Evaluating Selected Text" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
   <commands xmi:id="_J7GFoQh3Ee6106t9jWCUEA" elementId="AUTOGEN:::org.eclipse.pde.ui.logViewActions/org.eclipse.jdt.debug.ui.LogViewActions.showStackTrace" commandName="Show Stack Trace in Console View" description="Show Stack Trace in Console View" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkKwAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.replaceOccurrencesCommand" commandName="Replace Occurrences..." description="Replace all occurrences of this Type" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkKwQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.filter.hideStaticFeatures" commandName="Hide Static Features" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRkKwgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.gef.activatefilter.param1" name="Filter ID" optional="false"/>
+  </commands>
+  <commands xmi:id="_gRkKwwvMEe66qIRg0RValA" elementId="org.eclipse.gef.ui.palette_view" commandName="Palette" category="_JlbXoQh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkKxAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.filter.comments" commandName="Hide Comment Icons" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRkKxQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.gef.activatefilter.param1" name="Filter ID" optional="false"/>
+  </commands>
+  <commands xmi:id="_gRkKxgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createClassCommand" commandName="Create new Class" description="Create a new Class" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkKxwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createReferenceCommand" commandName="Create new Reference" description="Create a new Reference" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkKyAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.refreshdiagramCommand" commandName="Refresh" description="Refresh all diagram elements" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRkKyQvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.iconPath" name="iconPathParam"/>
+  </commands>
+  <commands xmi:id="_gRkx0AvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.util.refreshCallHierarchyCommand" commandName="Refresh" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx0QvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createStereotypeCommand" commandName="Create new Stereotype" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx0gvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.unhideLabelsCommand" commandName="Unhide Labels" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx0wvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.util.highlightCycleCommand" commandName="Highlight Cycle" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRkx1AvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.util.allParameter" name="all"/>
+  </commands>
+  <commands xmi:id="_gRkx1QvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.toggleTentaclesCommand" commandName="Enable/Disable tentacles" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx1gvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.ReparseAllFilesCommand" commandName="Reparse All Files" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx1wvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.util.showCallHierarchyCommand" commandName="Show Call Hierarchy" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx2AvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.configureElementImportsCommand" commandName="Configure Element Imports" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx2QvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.loadResourcesCommand" commandName="Load resources..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx2gvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.swapreadingdirection" commandName="Swap reading direction" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx2wvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.filter.hideStereotypeApplications" commandName="Hide Stereotype Applications" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRkx3AvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.gef.activatefilter.param1" name="Filter ID" optional="false"/>
+  </commands>
+  <commands xmi:id="_gRkx3QvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.roundtrip.ReverseEngineerIntoExistingModel" commandName="Reverse Engineer additional Files into this Model/Diagram" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx3gvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.create.primitivetype" commandName="Create new PrimitiveType" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx3wvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.createDependency" commandName="Create Dependency" description="Creates a new Dependency connection between two Elements" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx4AvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.common.generateCode" commandName="Generate Code" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx4QvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.toggleShowTemplateBindingClass" commandName="Show/hide template binding class" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx4gvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.ClearCodeDetailsCommand" commandName="Clear Code Details (Whitespace and Layout Data)" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx4wvMEe66qIRg0RValA" elementId="org.eclipse.xpand.ui.insertRT" commandName="Insert RT" description="Insert Xpand end terminal" category="_gRi8ogvMEe66qIRg0RValA"/>
+  <commands xmi:id="_gRkx5AvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.exportImage" commandName="Export Diagram as Image..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRkx5QvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.resetsize" commandName="Reset Size" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY4AvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.common.ui.setCodeGeneratorCommand" commandName="Set Code Generator" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRlY4QvMEe66qIRg0RValA" elementId="org.eclipse.ui.commands.radioStateParameter" name="State" optional="false"/>
+  </commands>
+  <commands xmi:id="_gRlY4gvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.copyCodeDetails" commandName="Toggle: Copy Code Details for Build Server" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY4wvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createCommentCommand" commandName="Create new Comment" description="Create a new Comment" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY5AvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.commands.validate.constraints" commandName="Validate Model Constraints" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY5QvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.findClassifier" commandName="Find Classifier" category="_gRi8oAvMEe66qIRg0RValA"/>
+  <commands xmi:id="_gRlY5gvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.toggleSnapToGeometryCommand" commandName="Snap to geometry" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY5wvMEe66qIRg0RValA" elementId="com.yattasolutions.linking.navigateto" commandName="Navigate To" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRlY6AvMEe66qIRg0RValA" elementId="com.yattasolutions.linking.navigateto.path" name="path" typeId="org.eclipse.ui.ide.resourcePath" optional="false"/>
+    <parameters xmi:id="_gRlY6QvMEe66qIRg0RValA" elementId="com.yattasolutions.linking.navigateto.internallocation" name="internal location"/>
+  </commands>
+  <commands xmi:id="_gRlY6gvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertToReference" commandName="Convert to Reference" description="Convert the selected Property into a Reference" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY6wvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertClassToInterfaceCommand" commandName="Convert to Interface" description="Convert the selected class into an interface" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY7AvMEe66qIRg0RValA" elementId="org.eclipse.xpand.ui.insertLT" commandName="Insert LT" description="Insert Xpand start terminal" category="_gRi8ogvMEe66qIRg0RValA"/>
+  <commands xmi:id="_gRlY7QvMEe66qIRg0RValA" elementId="com.yattasolutions.linking.showstats" commandName="Linking Cache..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY7gvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertDataTypeToInterfaceCommand" commandName="Convert to Interface" description="Convert the selected type into an interface" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY7wvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.hidederived" commandName="Hide derived properties and associations" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY8AvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.reloadTemplates" commandName="Reload Templates" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRlY8QvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.iconPath" name="iconPathParam"/>
+  </commands>
+  <commands xmi:id="_gRlY8gvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.showToolbar" commandName="Show Toolbar Popup" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY8wvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.editor.ui.show.outline" commandName="Quick Outline" description="Show the quick outline for the editor input" category="_JlbXqgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRlY9AvMEe66qIRg0RValA" elementId="org.eclipse.gef.zoom_in" commandName="Zoom In" description="Zoom In" category="_gRi8owvMEe66qIRg0RValA"/>
+  <commands xmi:id="_gRl_8AvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertClassToDataTypeCommand" commandName="Convert to Data Type" description="Convert the selected class into a data type" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_8QvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertDataTypeToPrimitiveTypeCommand" commandName="Convert to Primitive Type" description="Convert the selected data type into a primitive type" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_8gvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createComponentCommand" commandName="Create new Component" description="Create a new Component" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_8wvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createContainmentCommand" commandName="Create Containment" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_9AvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.ui.views.treeview.toggleSortingCommand" commandName="Sort" description="Enable sorting" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_9QvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createEnumerationLiteralCommand" commandName="Create new Literal" description="Create a new Enumeration literal" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_9gvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertDataTypeToClassCommand" commandName="Convert to Class" description="Convert the selected type into a class" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_9wvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.util.createDependencyGraph" commandName="Create Dependency Graph" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_-AvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.gef.unhideRelationshipsCommand" commandName="Unhide Relationships" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_-QvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.gef.resetAppearance" commandName="Reset Appearance" description="Revert the changes on the selected element's visual properties" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_-gvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.editor.ui.toggle.comment" commandName="Toggle Comment" description="Toggle comment the selected lines" category="_JlbXowh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl_-wvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertInterfaceToPrimitiveTypeCommand" commandName="Convert to Primitive Type" description="Convert the selected interface into a primitive type" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl__AvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.configureClassdiagramCommand" commandName="Configure Class Diagram" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRl__QvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.open_external_url" commandName="Open External Url" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRl__gvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.open_external_url.url" name="url" optional="false"/>
+  </commands>
+  <commands xmi:id="_gRl__wvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createPackageCommand" commandName="Create new Package" description="Create a new Package" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAAAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.createOpenPackage" commandName="Create new Class Diagram" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAAQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.create.datatype" commandName="Create new DataType" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAAgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertClassToPrimitiveTypeCommand" commandName="Convert to Primitive Type" description="Convert the selected class into a primitive type" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAAwvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.roundtrip.ReverseEngineerIntoNewModel" commandName="Reverse Engineer selected File(s) into a new Model and Diagram" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmABAvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.util.navigateToModelCommand" commandName="Model" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmABQvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.ui.callhierarchyview.selectionparameter" name="selectionparameter"/>
+  </commands>
+  <commands xmi:id="_gRmABgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createEnumerationCommand" commandName="Create new Enumeration" description="Create a new Enumeration" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmABwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.revealElement" commandName="Reveal Element in Diagram" description="Add a model element to the current diagram or, if it is already in the diagram, move the viewport to reveal it." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmACAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.layout.autoLayoutCommand" commandName="Layout Diagram" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmACQvMEe66qIRg0RValA" elementId="partial" name="partial"/>
+    <parameters xmi:id="_gRmACgvMEe66qIRg0RValA" elementId="edgesOnly" name="edgesOnly"/>
+  </commands>
+  <commands xmi:id="_gRmACwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.create.packageImport" commandName="Create new Package Import" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmADAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.showAssociatedCommand" commandName="Show Associated" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmADQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createAggregationCommand" commandName="Create new Aggregation" description="Create a new Aggregation" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmADgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertPrimitiveTypeToDataTypeCommand" commandName="Convert to Data Type" description="Convert the selected primitive type into a data type" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmADwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertPrimitiveTypeToEnumerationCommand" commandName="Convert to Data Type" description="Convert the selected primitive type into an enumeration" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAEAvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.util.navigateToSourceCommand" commandName="Source" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmAEQvMEe66qIRg0RValA" elementId="com.yattasolutions.architecturereview.ui.callhierarchyview.selectionparameter" name="selection"/>
+  </commands>
+  <commands xmi:id="_gRmAEgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertInterfaceToEnumerationCommand" commandName="Convert to Enumeration" description="Convert the selected interface into an enumeration" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAEwvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.ui.handler.compareGeneratedCode" commandName="Compare Generated Code" description="Compares the generated code for the current project with the existing" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmAFAvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.iconPath" name="iconPathParam"/>
+  </commands>
+  <commands xmi:id="_gRmAFQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.create.stereotypeextension" commandName="Create new Extension" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAFgvMEe66qIRg0RValA" elementId="org.eclipse.emf.codegen.ecore.ui.Generate" commandName="Generate Code" description="Generate code for the EMF models in the workspace" category="_gRi8oQvMEe66qIRg0RValA"/>
+  <commands xmi:id="_gRmAFwvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.updateFromClassPath" commandName="Update from ClassPath" description="Performs a Reverse Engineering of the currently selected Classifier" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAGAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.showChildrenCommand" commandName="Show Children" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAGQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.createUsage" commandName="Create Usage" description="Creates a new Usage connection between two Elements" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAGgvMEe66qIRg0RValA" elementId="org.eclipse.xpand.ui.refactoring.rename.define" commandName="Rename Define" description="Rename Define Refactoring" category="_gRi8pAvMEe66qIRg0RValA"/>
+  <commands xmi:id="_gRmAGwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.importMetclassCommand" commandName="Add/Remove Metaclass" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAHAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertInterfaceToClassCommand" commandName="Convert to Class" description="Convert the selected interface into a class" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAHQvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.closeModelCommand" commandName="Close Model" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmAHgvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.iconPath" name="iconPathParam"/>
+  </commands>
+  <commands xmi:id="_gRmAHwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertInterfaceToDataTypeCommand" commandName="Convert to Data Type" description="Convert the selected interface into a data type" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAIAvMEe66qIRg0RValA" elementId="com.yattasolutions.qvto.chooseQVTOFile" commandName="Apply QVTo Transformation..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAIQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.layout.toggleEnableLayoutCommand" commandName="Route edges when moving/resizing classifiers" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmAIgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.filter.hideNonPublicElements" commandName="Hide Non-Public Elements" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmnAAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.gef.activatefilter.param1" name="Filter ID" optional="false"/>
+  </commands>
+  <commands xmi:id="_gRmnAQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.collapseExpandCommand" commandName="Collapse/Expand" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmnAgvMEe66qIRg0RValA" elementId="collapse" name="collapse" optional="false"/>
+  </commands>
+  <commands xmi:id="_gRmnAwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.marker.ignore" commandName="Ignore Warning" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnBAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.toggleExplorativeBrowsingCommand" commandName="Toggle explorative browsing" description="Enable/Disable explorative browsing tentacles" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnBQvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.InvokeParserAndDisplayResultViewer" commandName="Invoke Parser and Display ResultViewer" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnBgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertEnumerationToDataTypeCommand" commandName="Convert to Data Type" description="Convert the selected enumeration into a data type" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnBwvMEe66qIRg0RValA" elementId="com.yattasolutions.linking.addtestdata" commandName="Add some Linking Test Data" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnCAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createCompositionCommand" commandName="Create new Composition" description="Create a new Composition" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnCQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertClassToEnumerationCommand" commandName="Convert to Enumeration" description="Convert the selected class into an enumeration" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnCgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.mergeAssoc" commandName="Merge Association" description="Merge two unidirectional associations into one bidirectional association" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnCwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createGeneralizationCommand" commandName="Create new Generalization" description="Create a new Generalization relationship" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnDAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.deleteElementCommand" commandName="Delete Element" description="Delete an element from the model" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmnDQvMEe66qIRg0RValA" elementId="com.yattasolutions.codegen.reverse.ui.iconPath" name="iconPathParam"/>
+  </commands>
+  <commands xmi:id="_gRmnDgvMEe66qIRg0RValA" elementId="com.yattasolutions.ecore.ui.export" commandName="Export EMF Ecore Model" description="Create a GenModel and Ecore file from the UML model" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmnDwvMEe66qIRg0RValA" elementId="com.yattasolutions.ecore.ui.forceWizard" name="forceWizard"/>
+  </commands>
+  <commands xmi:id="_gRmnEAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.showParentsCommand" commandName="Show Parents" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnEQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.gef.hideElementCommand" commandName="Hide Element" description="Hide an element from the diagram" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnEgvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.editor.ui.openDecl" commandName="Open Declaration" description="Open an editor on the selected element's declaration(s)" category="_JlbXqgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnEwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createAssociationCommand" commandName="Create new Association" description="Create a new Association" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnFAvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.create.packageMerge" commandName="Create new Package Merge" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnFQvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.showNeighborsDialogCommand" commandName="Show Neigbors..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnFgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.filter.colorpublicmembers" commandName="Color Public Members" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmnFwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.gef.activatefilter.param1" name="Filter ID" optional="false"/>
+  </commands>
+  <commands xmi:id="_gRmnGAvMEe66qIRg0RValA" elementId="org.eclipse.gef.zoom_out" commandName="Zoom Out" description="Zoom Out" category="_gRi8owvMEe66qIRg0RValA"/>
+  <commands xmi:id="_gRmnGQvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.templateworkbench.redefineTemplate" commandName="Redefine Templates" description="Adds Templates from refined Code Styles" category="_JlbXowh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnGgvMEe66qIRg0RValA" elementId="com.yattasolutions.xpandpp.formatTemplate" commandName="Format Template" description="Formats an Xpand++ temaplate if manual format mode is enabled" category="_JlbXowh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnGwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.editor.aligncommand" commandName="AlignCommand" category="_Jlb-sgh3Ee6106t9jWCUEA">
+    <parameters xmi:id="_gRmnHAvMEe66qIRg0RValA" elementId="alignmentType" name="alignmentType" optional="false"/>
+  </commands>
+  <commands xmi:id="_gRmnHQvMEe66qIRg0RValA" elementId="com.yattasolutions.linking.linkDocument" commandName="Associate Document with Selection" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnHgvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.gef.convertDataTypeToEnumerationCommand" commandName="Convert to Enumeration" description="Convert the selected data type into an enumeration" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnHwvMEe66qIRg0RValA" elementId="com.yattasolutions.diagrams.classdiagram.createInterfaceCommand" commandName="Create new Interface" description="Create a new Interface" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnIAvMEe66qIRg0RValA" elementId="com.yattasolutions.linking.searchReferences" commandName="Search references" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gRmnIQvMEe66qIRg0RValA" elementId="org.eclipse.xpand.ui.refactoring.quickMenu" commandName="Refactoring..." description="Open the refactoring quick menu" category="_gRi8pAvMEe66qIRg0RValA"/>
+  <commands xmi:id="_gbimIAvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.environment" commandName="com.yattasolutions.platform.marketplace.client.environment"/>
+  <commands xmi:id="_gbkbUAvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.signIn" commandName="com.yattasolutions.platform.marketplace.client.signIn"/>
+  <commands xmi:id="_gblCYAvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.email" commandName="com.yattasolutions.platform.marketplace.client.email"/>
+  <commands xmi:id="_gblpcAvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.account_management" commandName="com.yattasolutions.platform.marketplace.client.account_management"/>
+  <commands xmi:id="_gblpcQvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.signOut" commandName="com.yattasolutions.platform.marketplace.client.signOut"/>
+  <commands xmi:id="_gbm3kAvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.emailSandboxAccess" commandName="com.yattasolutions.platform.marketplace.client.emailSandboxAccess"/>
+  <commands xmi:id="_gbneoAvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.signInSandboxAccess" commandName="com.yattasolutions.platform.marketplace.client.signInSandboxAccess"/>
+  <commands xmi:id="_gboFsAvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.aboutSandbox" commandName="com.yattasolutions.platform.marketplace.client.aboutSandbox"/>
+  <commands xmi:id="_gbpT0AvMEe66qIRg0RValA" elementId="com.yattasolutions.platform.marketplace.client.signOutSandboxAccess" commandName="com.yattasolutions.platform.marketplace.client.signOutSandboxAccess"/>
+  <commands xmi:id="_gbsXIAvMEe66qIRg0RValA" elementId="com.yattasolutions.umllab.ui.showRegistration" commandName="com.yattasolutions.umllab.ui.showRegistration"/>
+  <commands xmi:id="_gpneYAvMEe66qIRg0RValA" elementId="AUTOGEN:::com.yattasolutions.umllab.introActionSet/com.yattasolutions.umllab.intro.action" commandName="Getting started with UML Lab" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gposgAvMEe66qIRg0RValA" elementId="AUTOGEN:::com.yattasolutions.umllab.reporting.actionSet1/com.yattasolutions.umllab.reporting.reportFreeBug" commandName="Report Issue or Enhancement in UML Lab" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gposgQvMEe66qIRg0RValA" elementId="AUTOGEN:::com.yattasolutions.umllab.registrationActionSet/com.yattasolutions.umllab.feedbackform" commandName="UML Lab Feedback..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gppTkAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.m2m.qvt.oml.runtime.actions/org.eclipse.m2m.internal.qvt.oml.runtime.ui.wizards.RunInterpretedTransformationActionId" commandName="Transformation..." description="Run QVT Transformation" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpqhsAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.emf.exporter.genModelEditorContribution/org.eclipse.emf.exporter.ui.GenModelExportActionDelegate.Editor" commandName="Export Model..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpqhsQvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.emf.importer.genModelEditorContribution/org.eclipse.emf.importer.ui.GenModelReloadActionDelegate.Editor" commandName="Reload..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gprIwAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.debug.ui.QVTOBreakpointRulerActions/org.eclipse.m2m.qvt.oml.debug.RulerToggleBreakpointAction" commandName="Toggle Breakpoint" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gprv0AvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.CreateExtensionActionID" commandName="Create Extension..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpsW4AvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.ReferenceMetamodelActionID" commandName="Reference Metamodel..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpsW4QvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.ReferenceMetaclassActionID" commandName="Reference Metaclass..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gps98AvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.DefineProfileActionID" commandName="Define" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gptlAAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.UnapplyProfileActionID" commandName="Unapply Profile..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpuMEAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.MergePackageActionID" commandName="Merge..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpuMEQvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.ImportTypeActionID" commandName="Import Type..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpuzIAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.ApplyProfileActionID" commandName="(Re-)Apply Profile..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpvaMAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.ExpandTemplatesActionID" commandName="Expand Templates..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpwBQAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.UnapplyStereotypeActionID" commandName="Unapply Stereotype..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpwoUAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.DestroyElementActionID" commandName="Destroy" category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpxPYAvMEe66qIRg0RValA" elementId="AUTOGEN:::org.eclipse.uml2.uml.editor.UMLEditorContributionID/org.eclipse.uml2.uml.editor.ApplyStereotypeActionID" commandName="Apply Stereotype..." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
+  <commands xmi:id="_gpydgAvMEe66qIRg0RValA" elementId="AUTOGEN:::com.yattasolutions.umllab.reporting.ReportBugContribution1/com.yattasolutions.umllab.reporting.ReportBugAction1" commandName="Report Issue in UML Lab" description="Report an issue related to UML Lab." category="_Jlb-sgh3Ee6106t9jWCUEA"/>
   <addons xmi:id="_Jk7BXgh3Ee6106t9jWCUEA" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_Jk7BXwh3Ee6106t9jWCUEA" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_Jk7BYAh3Ee6106t9jWCUEA" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -2426,7 +2719,7 @@
   <addons xmi:id="_Jk7BZgh3Ee6106t9jWCUEA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_Jk7BZwh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_JlELQAh3Ee6106t9jWCUEA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_gWUu9wvMEe66qIRg0RValA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_JlbXoAh3Ee6106t9jWCUEA" elementId="org.eclipse.team.ui.category.team" name="Version control (Team)" description="Actions that apply when working with a version control system"/>
   <categories xmi:id="_JlbXoQh3Ee6106t9jWCUEA" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
@@ -2468,4 +2761,9 @@
   <categories xmi:id="_Jlb-sQh3Ee6106t9jWCUEA" elementId="org.eclipse.oomph.commands" name="Oomph"/>
   <categories xmi:id="_Jlb-sgh3Ee6106t9jWCUEA" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
   <categories xmi:id="_Jlb-swh3Ee6106t9jWCUEA" elementId="com.genuitec.eclipse.inlinesearch.commands.category" name="Inline Search"/>
+  <categories xmi:id="_gRi8oAvMEe66qIRg0RValA" elementId="org.eclipse.m2m.qvt.oml.category" name="QVT Operational"/>
+  <categories xmi:id="_gRi8oQvMEe66qIRg0RValA" elementId="org.eclipse.emf.codegen.ecore.ui.Commands" name="EMF Code Generation" description="Commands for the EMF code generation tools"/>
+  <categories xmi:id="_gRi8ogvMEe66qIRg0RValA" elementId="org.eclipse.xpand.ui" name="Xpand Editor" description="Xpand Editor Commands"/>
+  <categories xmi:id="_gRi8owvMEe66qIRg0RValA" elementId="org.eclipse.gef.category.view" name="View" description="View"/>
+  <categories xmi:id="_gRi8pAvMEe66qIRg0RValA" elementId="org.eclipse.xpand.ui.refactoring" name="XPand Refactoring" description="Xpand Refactoring Commands"/>
 </application:Application>

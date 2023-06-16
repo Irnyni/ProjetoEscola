@@ -1,5 +1,8 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Turma {
 	
 	private String nomeProf;
@@ -8,6 +11,29 @@ public class Turma {
 	private int qtdeAlunos;
 	private String localAula;
 	private String horarioAula;
+	
+	public   ArrayList<List> listarTurmas(){
+		
+	    ArrayList<List> listaDeTurmas = new ArrayList<List>();
+		
+
+		List<String> lista = new ArrayList<String>();
+		lista.add("Juliano");
+		lista.add("6");
+		lista.add("2022");
+		lista.add("25");
+		lista.add("sala 5");
+		lista.add("Diurno");
+		
+		listaDeTurmas.add(lista);
+		return listaDeTurmas;
+		
+		
+		
+		
+	}
+	
+	
 	public String getNomeProf() {
 		return nomeProf;
 	}

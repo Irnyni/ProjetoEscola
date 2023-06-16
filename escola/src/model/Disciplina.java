@@ -15,29 +15,13 @@ public class Disciplina {
 	}
 	
 	
-	public   ArrayList<List> listarDisc(){
+	public   ArrayList<Disciplina> listarDisc(Disciplina d1){
 		
-	    ArrayList<List> listaDeDicionarios = new ArrayList<List>();
+	    ArrayList<Disciplina> listaDeDicionarios = new ArrayList<Disciplina>();
 		
-
-		List<String> lista = new ArrayList<String>();
-		lista.add("Matematica");
-		lista.add("PT");
-		lista.add("Matemática básica");
-		lista.add("true");
-		List<String> lista1 = new ArrayList<String>();
-		lista1.add("Portugues");
-		lista1.add("PT");
-		lista1.add("Português fundamental");
-		lista1.add("true");
-		List<String> lista2 = new ArrayList<String>();
-		lista2.add("Ciencias");
-		lista2.add("CIE");
-		lista2.add("Ciencias bio");
 	
-		listaDeDicionarios.add(lista);
-		listaDeDicionarios.add(lista1);
-		listaDeDicionarios.add(lista2);
+		listaDeDicionarios.add(d1);
+	
 		
 		return listaDeDicionarios;
 		
@@ -83,6 +67,9 @@ public class Disciplina {
 		this.descricao = descricao;
 		this.statusDisc = statusDisc;
 	}
+
+
+
 	
 
 }

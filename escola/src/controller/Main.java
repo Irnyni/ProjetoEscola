@@ -9,13 +9,13 @@ public class Main {
 		
 		Aluno a1 = new Aluno();
 		
-		a1.setNome("felipe");
+		a1.setNomeAluno("felipe");
 	    
 		
 		System.out.println( a1.toString());
 		
-		Aluno a2 = new Aluno("joao",25,"BP3019047");
-		System.out.println(a2.toString());
+		//Aluno a2 = new Aluno("joao",25,"BP3019047");
+		//System.out.println(a2.toString());
 	}
 
 }

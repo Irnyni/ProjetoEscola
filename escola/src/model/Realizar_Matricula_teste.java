@@ -25,6 +25,18 @@ class Realizar_Matricula_teste {
 
         // TESTE DE APRESENTAÇÃO DAS DISCIPLINAS , ACESSANDO O METODO DA CLASSE DISCIPLINA 
         
+        //LISTAGEM DAS TURMAS DE MODO RESUMIDO
+        Turma t = new Turma();
+        List<String> options = t.listarTurmas();
+        System.out.println( t.listarTurmas());
+	    ArrayList<List> materiasEscolhidas = new  ArrayList<List>();
+        materiasEscolhidas.add(Arrays.asList(options.get(0),options.get(3)));
+        System.out.println("MATERIAS ESCOLHIDAS: "+materiasEscolhidas);
+
+        //TESTE PARA VERIFICAR SE A LISTA DE OPÇÕES DE TURMAS NÃO ESTÁ VAZIA:
+        Assert.assertFalse(options.isEmpty());
+
+        
 	    Disciplina d1 = new Disciplina("Matemática","MT","Matemática básica",true);
 	    Disciplina d2 = new Disciplina("Portugues","pt", "Portugues básico",true);
 	    Disciplina d3 = new Disciplina("Biologia","BIO", "Biologia médio",true);
@@ -46,7 +58,7 @@ class Realizar_Matricula_teste {
             Assert.assertEquals(4, quantidadeAtributos);
         }
 	    
-	    //Teste para verificar a ordem das disciplinas na lista 
+	    //TESTE PARA VERIFICAR A ORDEM DAS DISCIPLINAS NA LISTA 
 	    
 	    Assert.assertEquals(d1, lista.get(0));
 	    Assert.assertEquals(d2, lista.get(1));
@@ -58,7 +70,7 @@ class Realizar_Matricula_teste {
 
         System.out.println(lista);
 	    
-        // TESTE DE APRESENTAÇÃO DAS Turmas ,  ACESSANDO O METODO DA CLASSE TURMA
+        // TESTE DE APRESENTAÇÃO DAS TURMAS ,  ACESSANDO O METODO DA CLASSE TURMA
  
         Turma T1 = new Turma("Juliano",2, 2022, 25, "SALA 5", "DIURNO");
         Turma T2 = new Turma("Maria",1, 2022, 30, "SALA 7", "NOTURNO");
@@ -75,11 +87,9 @@ class Realizar_Matricula_teste {
             Assert.assertEquals(6, quantidadeAtributos);
         }
         
-        
+      
 	    System.out.println(listaTurmas);
-	    
-	    
-	    
+   
 	}
 
 }

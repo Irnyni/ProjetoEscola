@@ -12,21 +12,20 @@ public class Turma {
 	private String localAula;
 	private String horarioAula;
 	
-	public   ArrayList<List> listarTurmas(){
+	public   List<String> listarTurmas(){
 		
-	    ArrayList<List> listaDeTurmas = new ArrayList<List>();
+	
 		
 
-		List<String> lista = new ArrayList<String>();
-		lista.add("Juliano");
-		lista.add("6");
-		lista.add("2022");
-		lista.add("25");
-		lista.add("sala 5");
-		lista.add("Diurno");
+		List<String> listaResumo = new ArrayList<String>();
+		listaResumo.add("Biologia 1º semestre diurno");
+		listaResumo.add("Matemática 1º semestre diurno");
+		listaResumo.add("Portugues 2º semestre noturno");
+		listaResumo.add("Filosofia 1º semestre diurno");
+		listaResumo.add("Biologia 2º semestre noturno");
 		
-		listaDeTurmas.add(lista);
-		return listaDeTurmas;
+
+		return listaResumo;
 		
 		
 		

@@ -19,6 +19,7 @@ class Realizar_Matricula_teste {
         List<String> options = t.listarTurmas();
         Assert.assertFalse(options.isEmpty()); // Verifica se a lista de turmas não está vazia
         System.out.println("Opções de turmas: " + options);
+        
     }
 
     @Test
@@ -77,5 +78,31 @@ class Realizar_Matricula_teste {
         Assert.assertEquals(d4, lista.get(3)); // Verifica se a quarta disciplina na lista é d4
         Assert.assertTrue(lista.contains(d1)); // Verifica se a lista contém a disciplina d1
         System.out.println(lista);
+    }
+    
+    @Test
+    void testCasoTurmaCheia() {
+        // Teste para verificar flag de turma lotada e chamada lista de espera
+       //APRESENTAÇÃO DETALHADA DA TURMA, ACESSANDO O METODO DA CLASSE TURMA
+        
+        Turma T1 = new Turma("Juliano",2, 2022, 25, "SALA 5", "DIURNO");
+        Turma T2 = new Turma("Maria",1, 2022, 30, "SALA 7", "NOTURNO");
+        Turma T3 = new Turma("João",1, 2022, 28, "SALA 3", "DIURNO");
+        Turma T4 = new Turma("Ana",1, 2022, 22, "SALA 2", "NOTURNO");
+        ArrayList<Turma> listaTurmas = new  ArrayList<Turma>();
+        listaTurmas.addAll(Arrays.asList(T1, T2, T3, T4));
+        System.out.println(listaTurmas);
+    	for (Turma turma : listaTurmas) {
+            int quantidadeAlunos = turma.getQtdeAlunos();
+           // Assert.assertEquals(25, quantidadeAlunos); // Verifica se a quantidade de alunos é igual a 25
+            
+            if (quantidadeAlunos>=25) {
+            	
+            	System.out.println("LISTA DE ESPERA");
+            	
+            	
+            }
+        }
+        
     }
 }

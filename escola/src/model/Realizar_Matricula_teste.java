@@ -41,7 +41,31 @@ class Realizar_Matricula_teste {
         int quantidadeAtributos = campos.length;
         Assert.assertEquals(6, quantidadeAtributos); // Verifica se a quantidade de atributos é igual a 6
     }
-
+    
+    
+    @Test
+    void testQuantidadeTurmasEscolhidasB() {
+        // Teste para verificar a quantidade de turmas escolhidas
+    	 Turma t = new Turma();
+         List<String> options = t.listarTurmas();
+         ArrayList<List> materiasEscolhidas = new ArrayList<List>();
+         materiasEscolhidas.add(Arrays.asList(options.get(0), options.get(3))); // Adiciona turmas escolhidas à lista
+         // Verifica se a quantidade de disciplinas é a permitida
+         Assert.assertTrue(materiasEscolhidas.get(0).size() <= 4);
+    }
+    
+    @Test
+    void testQuantidadeTurmasEscolhidasR() {
+        // Teste para verificar a quantidade de turmas escolhidas
+    	 Turma t = new Turma();
+         List<String> options = t.listarTurmas();
+         ArrayList<List> materiasEscolhidas = new ArrayList<List>();
+         materiasEscolhidas.add(Arrays.asList(options.get(0),options.get(1),options.get(2),options.get(3), options.get(4))); // Adiciona turmas escolhidas à lista
+        // Verifica se a quantidade de disciplinas é a permitida
+         Assert.assertTrue(materiasEscolhidas.get(0).size() < 4);
+    }
+    
+    
     @Test
     void testListarDisciplinas() {
         // Teste para listar as disciplinas disponíveis
@@ -80,29 +104,58 @@ class Realizar_Matricula_teste {
         System.out.println(lista);
     }
     
+
+    
     @Test
-    void testCasoTurmaCheia() {
-        // Teste para verificar flag de turma lotada e chamada lista de espera
-       //APRESENTAÇÃO DETALHADA DA TURMA, ACESSANDO O METODO DA CLASSE TURMA
-        
-        Turma T1 = new Turma("Juliano",2, 2022, 25, "SALA 5", "DIURNO");
-        Turma T2 = new Turma("Maria",1, 2022, 30, "SALA 7", "NOTURNO");
-        Turma T3 = new Turma("João",1, 2022, 28, "SALA 3", "DIURNO");
-        Turma T4 = new Turma("Ana",1, 2022, 22, "SALA 2", "NOTURNO");
-        ArrayList<Turma> listaTurmas = new  ArrayList<Turma>();
+    void testCasoTurmaCheiarB() {
+        // TESTE PARA VERIFICAR FLAG DE TURMA LOTADA E CHAMADA LISTA DE ESPERA
+        // APRESENTAÇÃO DETALHADA DA TURMA, ACESSANDO O METODO DA CLASSE TURMA
+
+        Turma T1 = new Turma("Juliano", 2, 2022, 24, "SALA 5", "DIURNO");
+        Turma T2 = new Turma("Maria", 1, 2022, 23, "SALA 7", "NOTURNO");
+        Turma T3 = new Turma("João", 1, 2022, 22, "SALA 3", "DIURNO");
+        Turma T4 = new Turma("Ana", 1, 2022, 22, "SALA 2", "NOTURNO");
+        ArrayList<Turma> listaTurmas = new ArrayList<Turma>();
         listaTurmas.addAll(Arrays.asList(T1, T2, T3, T4));
         System.out.println(listaTurmas);
-    	for (Turma turma : listaTurmas) {
+        for (Turma turma : listaTurmas) {
             int quantidadeAlunos = turma.getQtdeAlunos();
-           // Assert.assertEquals(25, quantidadeAlunos); // Verifica se a quantidade de alunos é igual a 25
-            
-            if (quantidadeAlunos>=25) {
-            	
-            	System.out.println("LISTA DE ESPERA");
-            	
-            	
+            // Verifica se a quantidade de alunos é igual a 25
+            Assert.assertTrue(quantidadeAlunos <= 25);
+
+            if (quantidadeAlunos > 25) {
+
+                System.out.println("LISTA DE ESPERA");
+
             }
         }
-        
     }
+
+    @Test
+    void testCasoTurmaCheiarR() {
+        // TESTE PARA VERIFICAR FLAG DE TURMA LOTADA E CHAMADA LISTA DE ESPERA
+        // APRESENTAÇÃO DETALHADA DA TURMA, ACESSANDO O METODO DA CLASSE TURMA
+
+        Turma T1 = new Turma("Juliano", 2, 2022, 25, "SALA 5", "DIURNO");
+        Turma T2 = new Turma("Maria", 1, 2022, 25, "SALA 7", "NOTURNO");
+        Turma T3 = new Turma("João", 1, 2022, 22, "SALA 3", "DIURNO");
+        Turma T4 = new Turma("Ana", 1, 2022, 22, "SALA 2", "NOTURNO");
+        ArrayList<Turma> listaTurmas = new ArrayList<Turma>();
+        listaTurmas.addAll(Arrays.asList(T1, T2, T3, T4));
+        System.out.println(listaTurmas);
+        for (Turma turma : listaTurmas) {
+            int quantidadeAlunos = turma.getQtdeAlunos();
+            // Verifica se a quantidade de alunos é igual a 25
+            Assert.assertTrue(quantidadeAlunos >= 25);
+
+            if (quantidadeAlunos < 25) {
+
+                System.out.println("LISTA DE ESPERA");
+
+            }
+        }
+    }
+
+    
+    
 }

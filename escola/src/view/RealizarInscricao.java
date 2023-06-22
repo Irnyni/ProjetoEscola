@@ -34,6 +34,12 @@ import javax.swing.JInternalFrame;
 import javax.swing.JList;
 import javax.swing.JComboBox;
 import javax.swing.JToggleButton;
+import javax.swing.event.AncestorListener;
+import javax.swing.event.AncestorEvent;
+import javax.swing.event.ChangeListener;
+import javax.swing.event.ChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeEvent;
 
 public class RealizarInscricao extends JFrame {
 
@@ -93,6 +99,14 @@ public class RealizarInscricao extends JFrame {
 		contentPane.add(lblInserirGuich);
 		
 		JToggleButton btnSalvar = new JToggleButton("BIOLOGIA 5 ANO TURMA D");
+
+		btnSalvar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("entrei");
+			}
+		});
+
+
 		btnSalvar.setHideActionText(true);
 		btnSalvar.setFocusPainted(false);
 		btnSalvar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));

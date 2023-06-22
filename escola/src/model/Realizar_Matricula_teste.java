@@ -69,12 +69,10 @@ class Realizar_Matricula_teste {
     @Test
     void testListarDisciplinas() {
         // Teste para listar as disciplinas disponíveis
-        Disciplina d1 = new Disciplina("Matemática", "MT", "Matemática básica", true);
-        Disciplina d2 = new Disciplina("Portugues", "pt", "Portugues básico", true);
-        Disciplina d3 = new Disciplina("Biologia", "BIO", "Biologia médio", true);
-        Disciplina d4 = new Disciplina("Filosofia", "FIL", "Filosofia Médio", true);
+    	Disciplina d = new Disciplina();
         ArrayList<Disciplina> lista = new ArrayList<Disciplina>();
-        lista.addAll(Arrays.asList(d1, d2, d3, d4));
+        lista= d.listarDisc();
+        System.out.println(lista);
         Assert.assertEquals(4, lista.size()); // Verifica se a lista de disciplinas tem tamanho igual a 4
     }
 
@@ -111,12 +109,9 @@ class Realizar_Matricula_teste {
         // TESTE PARA VERIFICAR FLAG DE TURMA LOTADA E CHAMADA LISTA DE ESPERA
         // APRESENTAÇÃO DETALHADA DA TURMA, ACESSANDO O METODO DA CLASSE TURMA
 
-        Turma T1 = new Turma("Juliano", 2, 2022, 24, "SALA 5", "DIURNO");
-        Turma T2 = new Turma("Maria", 1, 2022, 23, "SALA 7", "NOTURNO");
-        Turma T3 = new Turma("João", 1, 2022, 22, "SALA 3", "DIURNO");
-        Turma T4 = new Turma("Ana", 1, 2022, 22, "SALA 2", "NOTURNO");
         ArrayList<Turma> listaTurmas = new ArrayList<Turma>();
-        listaTurmas.addAll(Arrays.asList(T1, T2, T3, T4));
+        Turma t = new Turma();
+        listaTurmas= t.getListaB();
         System.out.println(listaTurmas);
         for (Turma turma : listaTurmas) {
             int quantidadeAlunos = turma.getQtdeAlunos();
@@ -136,12 +131,9 @@ class Realizar_Matricula_teste {
         // TESTE PARA VERIFICAR FLAG DE TURMA LOTADA E CHAMADA LISTA DE ESPERA
         // APRESENTAÇÃO DETALHADA DA TURMA, ACESSANDO O METODO DA CLASSE TURMA
 
-        Turma T1 = new Turma("Juliano", 2, 2022, 25, "SALA 5", "DIURNO");
-        Turma T2 = new Turma("Maria", 1, 2022, 25, "SALA 7", "NOTURNO");
-        Turma T3 = new Turma("João", 1, 2022, 22, "SALA 3", "DIURNO");
-        Turma T4 = new Turma("Ana", 1, 2022, 22, "SALA 2", "NOTURNO");
         ArrayList<Turma> listaTurmas = new ArrayList<Turma>();
-        listaTurmas.addAll(Arrays.asList(T1, T2, T3, T4));
+        Turma t = new Turma();
+        listaTurmas= t.getListaR();
         System.out.println(listaTurmas);
         for (Turma turma : listaTurmas) {
             int quantidadeAlunos = turma.getQtdeAlunos();

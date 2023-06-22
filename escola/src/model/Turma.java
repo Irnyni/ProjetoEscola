@@ -1,7 +1,14 @@
 package model;
 
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
+import org.junit.Assert;
+import org.junit.jupiter.api.Test;
 
 public class Turma {
 	
@@ -11,6 +18,7 @@ public class Turma {
 	private int qtdeAlunos;
 	private String localAula;
 	private String horarioAula;
+	
 	
 	public   List<String> listarTurmas(){
 		
@@ -32,7 +40,28 @@ public class Turma {
 		
 	}
 	
-	
+	public ArrayList<Turma> getListaR() {
+		
+	    Turma T1 = new Turma("Juliano", 2, 2022, 25, "SALA 5", "DIURNO");
+	    Turma T2 = new Turma("Maria", 1, 2022, 25, "SALA 7", "NOTURNO");
+	    Turma T3 = new Turma("João", 1, 2022, 22, "SALA 3", "DIURNO");
+	    Turma T4 = new Turma("Ana", 1, 2022, 22, "SALA 2", "NOTURNO");
+        ArrayList<Turma> listaTurmas = new ArrayList<Turma>();
+        listaTurmas.addAll(Arrays.asList(T1, T2, T3, T4));
+		
+		return listaTurmas;
+	}
+	public ArrayList<Turma> getListaB() {
+		
+        Turma T1 = new Turma("Juliano", 2, 2022, 24, "SALA 5", "DIURNO");
+        Turma T2 = new Turma("Maria", 1, 2022, 23, "SALA 7", "NOTURNO");
+        Turma T3 = new Turma("João", 1, 2022, 22, "SALA 3", "DIURNO");
+        Turma T4 = new Turma("Ana", 1, 2022, 22, "SALA 2", "NOTURNO");
+        ArrayList<Turma> listaTurmas = new ArrayList<Turma>();
+        listaTurmas.addAll(Arrays.asList(T1, T2, T3, T4));
+		
+		return listaTurmas;
+	}
 	public String getNomeProf() {
 		return nomeProf;
 	}
@@ -87,6 +116,7 @@ public class Turma {
 				+ ", localAula=" + localAula + ", horarioAula=" + horarioAula + "]";
 	}
 	
-	
+
+
 
 }

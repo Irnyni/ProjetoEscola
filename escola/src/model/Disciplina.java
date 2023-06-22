@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,15 +16,16 @@ public class Disciplina {
 	}
 	
 	
-	public   ArrayList<Disciplina> listarDisc(Disciplina d1){
+	public   ArrayList<Disciplina> listarDisc(){
 		
-	    ArrayList<Disciplina> listaDeDicionarios = new ArrayList<Disciplina>();
-		
-	
-		listaDeDicionarios.add(d1);
-	
-		
-		return listaDeDicionarios;
+        Disciplina d1 = new Disciplina("Matemática", "MT", "Matemática básica", true);
+        Disciplina d2 = new Disciplina("Portugues", "pt", "Portugues básico", true);
+        Disciplina d3 = new Disciplina("Biologia", "BIO", "Biologia médio", true);
+        Disciplina d4 = new Disciplina("Filosofia", "FIL", "Filosofia Médio", true);
+        ArrayList<Disciplina> lista = new ArrayList<Disciplina>();
+        lista.addAll(Arrays.asList(d1, d2, d3, d4));
+        
+		return lista;
 		
 		
 		

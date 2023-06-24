@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_spNAQBI3Ee6BspE64CsRpg">
+  <modelElement href="escola.uml#_sxdkYBI3Ee6BspE64CsRpg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s2VdUBI3Ee6BspE64CsRpg" sourceAnchor="405.0,0.0" targetAnchor="683.0,127.0" target="_s21MkBI3Ee6BspE64CsRpg" source="_s2WEaBI3Ee6BspE64CsRpg">
+    <modelElement href="escola.uml#_sz83sRI3Ee6BspE64CsRpg"/>
+    <bendpoints xmi:id="_s70aQBI3Ee6BspE64CsRpg" sourceY="-182" targetX="905"/>
+    <stereotypes xmi:id="_s2WEYBI3Ee6BspE64CsRpg" name="Reference">
+      <modelElement href="escola.uml#_sz9ewBI3Ee6BspE64CsRpg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s2WEYRI3Ee6BspE64CsRpg" text="">
+      <visualProperties xmi:id="_s71oYBI3Ee6BspE64CsRpg" position="-28.497284429506067,53.028421042381666"/>
+    </nameVisual>
+    <sourceRole xmi:id="_s2WEYhI3Ee6BspE64CsRpg" aggregationKind="NONE" name="">
+      <modelElement href="escola.uml#_sz83shI3Ee6BspE64CsRpg"/>
+      <visualProperties xmi:id="_s71BUBI3Ee6BspE64CsRpg" position="-19.673509109071233,-79.69175399505588"/>
+      <visibility xmi:id="_s2WEYxI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEZBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s2WEZRI3Ee6BspE64CsRpg" aggregationKind="NONE" name="d" navigable="true">
+      <modelElement href="escola.uml#_szvcUBI3Ee6BspE64CsRpg"/>
+      <visualProperties xmi:id="_s72PcBI3Ee6BspE64CsRpg" position="881.112345612848,-22.018614677202777"/>
+      <visibility xmi:id="_s2WEZhI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2WEZxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_s2yJQBI3Ee6BspE64CsRpg" source="_s21MkBI3Ee6BspE64CsRpg">
+    <modelElement href="escola.uml#_sz8QoBI3Ee6BspE64CsRpg"/>
+    <stereotypes xmi:id="_s2zXYxI3Ee6BspE64CsRpg" name="Reference">
+      <modelElement href="escola.uml#_sz83sBI3Ee6BspE64CsRpg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_s2zXYBI3Ee6BspE64CsRpg" text=""/>
+    <sourceRole xmi:id="_s2zXYRI3Ee6BspE64CsRpg" aggregationKind="NONE" name="">
+      <modelElement href="escola.uml#_sz8QoRI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2z-cRI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2z-cBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_s2zXYhI3Ee6BspE64CsRpg" aggregationKind="NONE" name="lista" navigable="true">
+      <modelElement href="escola.uml#_szpVsRI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s20lgBI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2z-chI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s2WEaBI3Ee6BspE64CsRpg" name="Turma" associationsOut="_s2VdUBI3Ee6BspE64CsRpg">
+    <modelElement href="escola.uml#_syhUUBI3Ee6BspE64CsRpg"/>
+    <visualProperties xmi:id="_s2WEaRI3Ee6BspE64CsRpg" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s2WEahI3Ee6BspE64CsRpg" label="+"/>
+    <attributes xmi:id="_s2WEaxI3Ee6BspE64CsRpg" name="nomeProf">
+      <modelElement href="escola.uml#_sztnIBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2WEbBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEbRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2WEbhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2WEbxI3Ee6BspE64CsRpg" name="semestre">
+      <modelElement href="escola.uml#_szuOMBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2WEcBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEcRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2WEchI3Ee6BspE64CsRpg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2WEcxI3Ee6BspE64CsRpg" name="ano">
+      <modelElement href="escola.uml#_szuOMRI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2WEdBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEdRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2WEdhI3Ee6BspE64CsRpg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2WEdxI3Ee6BspE64CsRpg" name="qtdeAlunos">
+      <modelElement href="escola.uml#_szu1QBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2WEeBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEeRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2WEehI3Ee6BspE64CsRpg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2WEexI3Ee6BspE64CsRpg" name="localAula">
+      <modelElement href="escola.uml#_szu1QRI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2WEfBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEfRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2WEfhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2WEfxI3Ee6BspE64CsRpg" name="horarioAula">
+      <modelElement href="escola.uml#_szu1QhI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2WEgBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEgRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2WEghI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2WEgxI3Ee6BspE64CsRpg" defaultValue="new Disciplina()" name="d">
+      <modelElement href="escola.uml#_szvcUBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2WEhBI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_szwDYBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2WEhRI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2WEhhI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2WEhxI3Ee6BspE64CsRpg" name="Disciplina">
+        <modelElement href="escola.uml#_syEoYBI3Ee6BspE64CsRpg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s2WEiBI3Ee6BspE64CsRpg" name="listarTurmas">
+      <modelElement href="escola.uml#_syiicBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2WEiRI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEihI3Ee6BspE64CsRpg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_s2WEixI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syiicRI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2WEjBI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s2WEjRI3Ee6BspE64CsRpg" name="getListaR">
+      <modelElement href="escola.uml#_syjJgBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2WEjhI3Ee6BspE64CsRpg" name="Generics">
+        <modelElement href="escola.uml#_syjwkBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2WEjxI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEkBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2WEkRI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_szjPEBI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2WEkhI3Ee6BspE64CsRpg" name="ArrayList">
+          <modelElement href="escola.uml#_szTXcBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s2WEkxI3Ee6BspE64CsRpg" name="getListaB">
+      <modelElement href="escola.uml#_syjwkRI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2WElBI3Ee6BspE64CsRpg" name="Generics">
+        <modelElement href="escola.uml#_sykXoBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2WElRI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WElhI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2WElxI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_szj2IBI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2WEmBI3Ee6BspE64CsRpg" name="ArrayList">
+          <modelElement href="escola.uml#_szTXcBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s2WEmRI3Ee6BspE64CsRpg" name="Turma">
+      <modelElement href="escola.uml#_syk-sBI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2WEmhI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2WEmxI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEnBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2WEnRI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syllwhI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2WEnhI3Ee6BspE64CsRpg" name="Turma">
+          <modelElement href="escola.uml#_syhUUBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s2WEnxI3Ee6BspE64CsRpg" name="Turma">
+      <modelElement href="escola.uml#_symM0BI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2WEoBI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2WEoRI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEohI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2WEoxI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_symz4RI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2WEpBI3Ee6BspE64CsRpg" name="Turma">
+          <modelElement href="escola.uml#_syhUUBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s2WEpRI3Ee6BspE64CsRpg" name="nomeProf">
+        <modelElement href="escola.uml#_symM0RI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2WEphI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2WEpxI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2WEqBI3Ee6BspE64CsRpg" name="semestre">
+        <modelElement href="escola.uml#_symM0hI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2WEqRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2WEqhI3Ee6BspE64CsRpg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2WEqxI3Ee6BspE64CsRpg" name="ano">
+        <modelElement href="escola.uml#_symM0xI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2WErBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2WErRI3Ee6BspE64CsRpg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2WErhI3Ee6BspE64CsRpg" name="qtdeAlunos">
+        <modelElement href="escola.uml#_symM1BI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2WErxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2WEsBI3Ee6BspE64CsRpg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2WEsRI3Ee6BspE64CsRpg" name="localAula">
+        <modelElement href="escola.uml#_symM1RI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2WEshI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2WEsxI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2WEtBI3Ee6BspE64CsRpg" name="horarioAula">
+        <modelElement href="escola.uml#_symM1hI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2WEtRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2WEthI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s2WEtxI3Ee6BspE64CsRpg" name="toString">
+      <modelElement href="escola.uml#_symz4hI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2WEuBI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syna8RI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2WEuRI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syoCABI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2WEuhI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2WEuxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2WEvBI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syna8BI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2WEvRI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s2dZIBI3Ee6BspE64CsRpg" name="Aluno">
+    <modelElement href="escola.uml#_sx-hwBI3Ee6BspE64CsRpg"/>
+    <visualProperties xmi:id="_s2dZIRI3Ee6BspE64CsRpg" position="23.0,425.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s2dZIhI3Ee6BspE64CsRpg" label="+"/>
+    <attributes xmi:id="_s2dZIxI3Ee6BspE64CsRpg" name="nomeAluno">
+      <modelElement href="escola.uml#_szmSYBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2dZJBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2dZJRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2dZJhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2dZJxI3Ee6BspE64CsRpg" name="prontuario">
+      <modelElement href="escola.uml#_szm5cBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2dZKBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2dZKRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2dZKhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2dZKxI3Ee6BspE64CsRpg" name="curso">
+      <modelElement href="escola.uml#_szm5cRI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2dZLBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2dZLRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2dZLhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2dZLxI3Ee6BspE64CsRpg" name="cpf">
+      <modelElement href="escola.uml#_szm5chI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2dZMBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2dZMRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2dZMhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2dZMxI3Ee6BspE64CsRpg" name="situacaoDisc">
+      <modelElement href="escola.uml#_sznggBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2dZNBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2dZNRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2dZNhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2dZNxI3Ee6BspE64CsRpg" name="idade">
+      <modelElement href="escola.uml#_sznggRI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2dZOBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2dZORI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2dZOhI3Ee6BspE64CsRpg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s2dZOxI3Ee6BspE64CsRpg" name="Aluno">
+      <modelElement href="escola.uml#_syAW8BI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2dZPBI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2dZPRI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2dZPhI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2dZPxI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syA-BxI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2dZQBI3Ee6BspE64CsRpg" name="Aluno">
+          <modelElement href="escola.uml#_sx-hwBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s2dZQRI3Ee6BspE64CsRpg" name="nomeAluno">
+        <modelElement href="escola.uml#_syA-ABI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2dZQhI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2dZQxI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2dZRBI3Ee6BspE64CsRpg" name="prontuario">
+        <modelElement href="escola.uml#_syA-ARI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2dZRRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2dZRhI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2dZRxI3Ee6BspE64CsRpg" name="curso">
+        <modelElement href="escola.uml#_syA-AhI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2dZSBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2dZSRI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2dZShI3Ee6BspE64CsRpg" name="cpf">
+        <modelElement href="escola.uml#_syA-AxI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2dZSxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2dZTBI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2dZTRI3Ee6BspE64CsRpg" name="situacaoDisc">
+        <modelElement href="escola.uml#_syA-BBI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2dZThI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2dZTxI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s2dZUBI3Ee6BspE64CsRpg" name="Aluno">
+      <modelElement href="escola.uml#_syBlEBI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2dZURI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2dZUhI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2dZUxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2dZVBI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syBlExI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2dZVRI3Ee6BspE64CsRpg" name="Aluno">
+          <modelElement href="escola.uml#_sx-hwBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s2dZVhI3Ee6BspE64CsRpg" name="toString">
+      <modelElement href="escola.uml#_syCMIBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2dZVxI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syCMIhI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2dZWBI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syCzMBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2dZWRI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2dZWhI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2dZWxI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syCMIRI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2dZXBI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s2iRoBI3Ee6BspE64CsRpg" name="Realizar_Matricula_teste">
+    <modelElement href="escola.uml#_syW8QBI3Ee6BspE64CsRpg"/>
+    <visualProperties xmi:id="_s2iRoRI3Ee6BspE64CsRpg" position="-390.0,-53.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s2iRohI3Ee6BspE64CsRpg" label="~"/>
+    <operations xmi:id="_s2iRoxI3Ee6BspE64CsRpg" name="testListarTurmas">
+      <modelElement href="escola.uml#_syXjUBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iRpBI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syYKYBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iRpRI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syYxcBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iRphI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iRpxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_s2iRqBI3Ee6BspE64CsRpg" name="testEscolherTurmas">
+      <modelElement href="escola.uml#_syYxchI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iRqRI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syZYgBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iRqhI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syZYgRI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iRqxI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iRrBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_s2iRrRI3Ee6BspE64CsRpg" name="testQuantidadeAtributosTurma">
+      <modelElement href="escola.uml#_syZ_kBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iRrhI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syZ_kRI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iRrxI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syamoBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iRsBI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iRsRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_s2iRshI3Ee6BspE64CsRpg" name="testQuantidadeTurmasEscolhidasB">
+      <modelElement href="escola.uml#_syamohI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iRsxI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_sybNsBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iRtBI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syb0wBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iRtRI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iRthI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_s2iRtxI3Ee6BspE64CsRpg" name="testQuantidadeTurmasEscolhidasR">
+      <modelElement href="escola.uml#_syb0whI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iRuBI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_sycb0BI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iRuRI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_sycb0RI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iRuhI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iRuxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_s2iRvBI3Ee6BspE64CsRpg" name="testListarDisciplinas">
+      <modelElement href="escola.uml#_sydC4BI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iRvRI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_sydC4RI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iRvhI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_sydp8BI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iRvxI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iRwBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_s2iRwRI3Ee6BspE64CsRpg" name="testQuantidadeAtributosDisciplina">
+      <modelElement href="escola.uml#_sydp8hI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iRwhI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_sydp8xI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iRwxI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syeRABI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iRxBI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iRxRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_s2iRxhI3Ee6BspE64CsRpg" name="testOrdemDisciplinas">
+      <modelElement href="escola.uml#_syeRAhI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iRxxI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_sye4EBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iRyBI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_sye4ERI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iRyRI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iRyhI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_s2iRyxI3Ee6BspE64CsRpg" name="testCasoTurmaCheiarB">
+      <modelElement href="escola.uml#_syffIBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iRzBI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syffIRI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iRzRI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syffIhI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iRzhI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iRzxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_s2iR0BI3Ee6BspE64CsRpg" name="testCasoTurmaCheiarR">
+      <modelElement href="escola.uml#_sygGMRI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2iR0RI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_sygGMhI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2iR0hI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_sygtQBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2iR0xI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s2iR1BI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s2nxMBI3Ee6BspE64CsRpg" name="Professor">
+    <modelElement href="escola.uml#_sySq0BI3Ee6BspE64CsRpg"/>
+    <visualProperties xmi:id="_s2nxMRI3Ee6BspE64CsRpg" position="912.0,-29.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s2nxMhI3Ee6BspE64CsRpg" label="+"/>
+    <attributes xmi:id="_s2nxMxI3Ee6BspE64CsRpg" name="nomeProf">
+      <modelElement href="escola.uml#_sztAEBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2nxNBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2nxNRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2nxNhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2nxNxI3Ee6BspE64CsRpg" name="areaEnsino">
+      <modelElement href="escola.uml#_sztAERI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2nxOBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2nxORI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2nxOhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s2nxOxI3Ee6BspE64CsRpg" name="Professor">
+      <modelElement href="escola.uml#_syT48BI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2nxPBI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2nxPRI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2nxPhI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2nxPxI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syT49RI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2nxQBI3Ee6BspE64CsRpg" name="Professor">
+          <modelElement href="escola.uml#_sySq0BI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s2nxQRI3Ee6BspE64CsRpg" name="nomeProf">
+        <modelElement href="escola.uml#_syT48RI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2nxQhI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2nxQxI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2nxRBI3Ee6BspE64CsRpg" name="areaEnsino">
+        <modelElement href="escola.uml#_syT48hI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2nxRRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2nxRhI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s2nxRxI3Ee6BspE64CsRpg" name="Professor">
+      <modelElement href="escola.uml#_syUgABI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2nxSBI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2nxSRI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2nxShI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2nxSxI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syUgAxI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2nxTBI3Ee6BspE64CsRpg" name="Professor">
+          <modelElement href="escola.uml#_sySq0BI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s2nxTRI3Ee6BspE64CsRpg" name="toString">
+      <modelElement href="escola.uml#_syVHEBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2nxThI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syVuIBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2nxTxI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syVuIRI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2nxUBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2nxURI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2nxUhI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syVHERI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2nxUxI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s2qNcBI3Ee6BspE64CsRpg" name="Inscricao">
+    <modelElement href="escola.uml#_syKvABI3Ee6BspE64CsRpg"/>
+    <visualProperties xmi:id="_s2qNcRI3Ee6BspE64CsRpg" position="892.0,199.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s2qNchI3Ee6BspE64CsRpg" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s2sCoBI3Ee6BspE64CsRpg" name="ListadeEspera">
+    <modelElement href="escola.uml#_syKvARI3Ee6BspE64CsRpg"/>
+    <visualProperties xmi:id="_s2sCoRI3Ee6BspE64CsRpg" position="119.0,752.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s2sCohI3Ee6BspE64CsRpg" label="+"/>
+    <attributes xmi:id="_s2sCoxI3Ee6BspE64CsRpg" name="posicaoAluno">
+      <modelElement href="escola.uml#_szrK4BI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2sCpBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2sCpRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2sCphI3Ee6BspE64CsRpg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2sCpxI3Ee6BspE64CsRpg" name="matricula">
+      <modelElement href="escola.uml#_szrK4RI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2sCqBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2sCqRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2sCqhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2sCqxI3Ee6BspE64CsRpg" name="nomeDisc">
+      <modelElement href="escola.uml#_szrx8BI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2sCrBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2sCrRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2sCrhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s2sCrxI3Ee6BspE64CsRpg" name="toString">
+      <modelElement href="escola.uml#_syLWEBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2sCsBI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syL9IRI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2sCsRI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syMkMBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2sCshI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2sCsxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2sCtBI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syL9IBI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2sCtRI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s2sCthI3Ee6BspE64CsRpg" name="ListadeEspera">
+      <modelElement href="escola.uml#_syNLQBI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2sCtxI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2sCuBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2sCuRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2sCuhI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syNyUBI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2sCuxI3Ee6BspE64CsRpg" name="ListadeEspera">
+          <modelElement href="escola.uml#_syKvARI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s2sCvBI3Ee6BspE64CsRpg" name="posicaoAluno">
+        <modelElement href="escola.uml#_syNLQRI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2sCvRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2sCvhI3Ee6BspE64CsRpg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2sCvxI3Ee6BspE64CsRpg" name="matricula">
+        <modelElement href="escola.uml#_syNLQhI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2sCwBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2sCwRI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2sCwhI3Ee6BspE64CsRpg" name="nomeDisc">
+        <modelElement href="escola.uml#_syNLQxI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2sCwxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2sCxBI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s2sCxRI3Ee6BspE64CsRpg" name="ListadeEspera">
+      <modelElement href="escola.uml#_syNyURI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2sCxhI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2sCxxI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2sCyBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2sCyRI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syOZYhI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2sCyhI3Ee6BspE64CsRpg" name="ListadeEspera">
+          <modelElement href="escola.uml#_syKvARI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s2vF8BI3Ee6BspE64CsRpg" name="Participacao">
+    <modelElement href="escola.uml#_syPAcBI3Ee6BspE64CsRpg"/>
+    <visualProperties xmi:id="_s2vF8RI3Ee6BspE64CsRpg" position="896.0,323.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s2vF8hI3Ee6BspE64CsRpg" label="+"/>
+    <attributes xmi:id="_s2vF8xI3Ee6BspE64CsRpg" name="matricula">
+      <modelElement href="escola.uml#_szrx8RI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2vF9BI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2vF9RI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2vF9hI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s2vF9xI3Ee6BspE64CsRpg" name="nomeDisc">
+      <modelElement href="escola.uml#_szsZABI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s2vF-BI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2vF-RI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s2vF-hI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s2vF-xI3Ee6BspE64CsRpg" name="toString">
+      <modelElement href="escola.uml#_syPngBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s2vF_BI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syQOkRI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s2vF_RI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syQ1oBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s2vF_hI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2vF_xI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2vGABI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syQOkBI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2vGARI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s2vGAhI3Ee6BspE64CsRpg" name="Participacao">
+      <modelElement href="escola.uml#_syRcsBI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2vGAxI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2vGBBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2vGBRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2vGBhI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syRctRI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2vGBxI3Ee6BspE64CsRpg" name="Participacao">
+          <modelElement href="escola.uml#_syPAcBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s2vGCBI3Ee6BspE64CsRpg" name="matricula">
+        <modelElement href="escola.uml#_syRcsRI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2vGCRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2vGChI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s2vtABI3Ee6BspE64CsRpg" name="nomeDisc">
+        <modelElement href="escola.uml#_syRcshI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s2vtARI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s2vtAhI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s2vtAxI3Ee6BspE64CsRpg" name="Participacao">
+      <modelElement href="escola.uml#_sySDwBI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s2vtBBI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s2vtBRI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s2vtBhI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s2vtBxI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_sySDwxI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s2vtCBI3Ee6BspE64CsRpg" name="Participacao">
+          <modelElement href="escola.uml#_syPAcBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_s21MkBI3Ee6BspE64CsRpg" name="Disciplina" associationsIn="_s2VdUBI3Ee6BspE64CsRpg" associationsOut="_s2yJQBI3Ee6BspE64CsRpg">
+    <modelElement href="escola.uml#_syEoYBI3Ee6BspE64CsRpg"/>
+    <visualProperties xmi:id="_s21MkRI3Ee6BspE64CsRpg" position="-1153.0,-279.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_s21MkhI3Ee6BspE64CsRpg" label="+"/>
+    <attributes xmi:id="_s21MkxI3Ee6BspE64CsRpg" name="nomeDisc">
+      <modelElement href="escola.uml#_szoHkBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s21MlBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s21MlRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s21MlhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s21MlxI3Ee6BspE64CsRpg" name="sigla">
+      <modelElement href="escola.uml#_szouoBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s21MmBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s21MmRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s21MmhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s21MmxI3Ee6BspE64CsRpg" name="descricao">
+      <modelElement href="escola.uml#_szouoRI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s21MnBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s21MnRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s21MnhI3Ee6BspE64CsRpg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s21MnxI3Ee6BspE64CsRpg" name="statusDisc">
+      <modelElement href="escola.uml#_szpVsBI3Ee6BspE64CsRpg"/>
+      <visibility xmi:id="_s21MoBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s21MoRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s21MohI3Ee6BspE64CsRpg" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_s21MoxI3Ee6BspE64CsRpg" defaultValue="new ArrayList&lt;Disciplina>()" name="lista">
+      <modelElement href="escola.uml#_szpVsRI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s21MpBI3Ee6BspE64CsRpg" name="Generics">
+        <modelElement href="escola.uml#_szp8wBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s21MpRI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_szqj0BI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s21MphI3Ee6BspE64CsRpg" label="~"/>
+      <cardinality xmi:id="_s21MpxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <type xmi:id="_s21MqBI3Ee6BspE64CsRpg" name="ArrayList">
+        <modelElement href="escola.uml#_szTXcBI3Ee6BspE64CsRpg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_s21MqRI3Ee6BspE64CsRpg" name="Disciplina">
+      <modelElement href="escola.uml#_syF2gBI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s21MqhI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s21MqxI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s21MrBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s21MrRI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syF2gxI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s21MrhI3Ee6BspE64CsRpg" name="Disciplina">
+          <modelElement href="escola.uml#_syEoYBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s21MrxI3Ee6BspE64CsRpg" name="toString">
+      <modelElement href="escola.uml#_syGdkBI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s21MsBI3Ee6BspE64CsRpg" name="LegacyStyledElement">
+        <modelElement href="escola.uml#_syHEoBI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_s21MsRI3Ee6BspE64CsRpg" name="Annotations">
+        <modelElement href="escola.uml#_syHEoRI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s21MshI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s21MsxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s21MtBI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syGdkRI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s21MtRI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_s21MthI3Ee6BspE64CsRpg" name="Disciplina">
+      <modelElement href="escola.uml#_syHrsBI3Ee6BspE64CsRpg"/>
+      <keywords xmi:id="_s21MtxI3Ee6BspE64CsRpg" keyword="create"/>
+      <visibility xmi:id="_s21MuBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s21MuRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s21zoBI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_syISwxI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s21zoRI3Ee6BspE64CsRpg" name="Disciplina">
+          <modelElement href="escola.uml#_syEoYBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s21zohI3Ee6BspE64CsRpg" name="nomeDisc">
+        <modelElement href="escola.uml#_syHrsRI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s21zoxI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s21zpBI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s21zpRI3Ee6BspE64CsRpg" name="sigla">
+        <modelElement href="escola.uml#_syHrshI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s21zphI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s21zpxI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s21zqBI3Ee6BspE64CsRpg" name="descricao">
+        <modelElement href="escola.uml#_syHrsxI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s21zqRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s21zqhI3Ee6BspE64CsRpg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_s21zqxI3Ee6BspE64CsRpg" name="statusDisc">
+        <modelElement href="escola.uml#_syISwBI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s21zrBI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s21zrRI3Ee6BspE64CsRpg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_s21zrhI3Ee6BspE64CsRpg" name="listarDisc">
+      <modelElement href="escola.uml#_szXo4BI3Ee6BspE64CsRpg"/>
+      <stereotypes xmi:id="_s21zrxI3Ee6BspE64CsRpg" name="Generics">
+        <modelElement href="escola.uml#_szYP8BI3Ee6BspE64CsRpg"/>
+      </stereotypes>
+      <visibility xmi:id="_s21zsBI3Ee6BspE64CsRpg" label="+"/>
+      <cardinality xmi:id="_s21zsRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_s21zshI3Ee6BspE64CsRpg">
+        <modelElement href="escola.uml#_sziA8BI3Ee6BspE64CsRpg"/>
+        <type xmi:id="_s21zsxI3Ee6BspE64CsRpg" name="ArrayList">
+          <modelElement href="escola.uml#_szTXcBI3Ee6BspE64CsRpg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_s21ztBI3Ee6BspE64CsRpg" name="d3">
+        <modelElement href="escola.uml#_szXo4RI3Ee6BspE64CsRpg"/>
+        <cardinality xmi:id="_s21ztRI3Ee6BspE64CsRpg" label="1" max="1" min="1"/>
+        <type xmi:id="_s21zthI3Ee6BspE64CsRpg" name="Disciplina">
+          <modelElement href="escola.uml#_syEoYBI3Ee6BspE64CsRpg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

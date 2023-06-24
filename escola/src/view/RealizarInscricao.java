@@ -157,7 +157,7 @@ public class RealizarInscricao extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				Disciplina d = new Disciplina("Filosofia", "FIL", "Filosofia Médio", true);
-			    Turma t = new Turma("Maria", 1, 2022, 25, "SALA 7", "NOTURNO");
+			    Turma t = new Turma("Maria", 1, 2022, 24, "SALA 7", "NOTURNO");
 		        lista.addAll(Arrays.asList(d));
 		        listaTurma.addAll(Arrays.asList(t));
 		        System.out.println(lista);
@@ -250,8 +250,7 @@ public class RealizarInscricao extends JFrame {
 				            // Verifica se a quantidade de alunos é igual a 25
 				       
 				            if (quantidadeAlunos >= 25) {
-				            	System.out.println("entreiaqui");
-
+				            	
 				               	ExListaEspera frame = new ExListaEspera();
 				        	    frame.setVisible(true);
 					        	dispose();
@@ -259,8 +258,14 @@ public class RealizarInscricao extends JFrame {
 				            }
 				            else {
 				            	RealizarInscricao2 frame = new RealizarInscricao2();
+				            	
+				            	System.out.println("essa"+lista);
+				                frame.enviaDados(lista);
 				        	    frame.setVisible(true);
 					        	dispose();
+					        	
+					        	
+					        	
 				            }
 					 }
 					

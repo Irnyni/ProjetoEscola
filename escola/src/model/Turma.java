@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+import model.Disciplina;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
@@ -19,12 +19,12 @@ public class Turma {
 	private String localAula;
 	private String horarioAula;
 	
-	
+	Disciplina d = new Disciplina();
 	public   List<String> listarTurmas(){
 		
 	
 		
-
+   
 		List<String> listaResumo = new ArrayList<String>();
 		listaResumo.add("Biologia 1º semestre diurno");
 		listaResumo.add("Matemática 1º semestre diurno");

@@ -99,7 +99,7 @@ public class RealizarInscricao2 extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					RealizarInscricao2 frame = new RealizarInscricao2();
+					
 					
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -222,26 +222,6 @@ public class RealizarInscricao2 extends JFrame {
         lblMatria.setBounds(-13, 123, 164, 70);
         contentPane.add(lblMatria);
 	
-//	    if (dados != null) {
-//	    	
-//	    	 for (Disciplina disciplina : dados) {
-//	    	        Object[] rowData = {disciplina.getNomeDisc(), disciplina.getSigla(), disciplina.getDescricao()};
-//	    	        model.addRow(rowData);
-//	    	    }
-//
-//	    
-//	    	    table.setModel(model);
-//	    	
-//	    	
-//	        }
-//		
-		
-         
- 
-			
-	
-        
-		
 
 		
 	}

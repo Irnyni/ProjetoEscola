@@ -74,9 +74,9 @@ public class Excessodisc extends JFrame {
 		lblNewLabel.setBounds(81, 11, -35, 26);
 		contentPane.add(lblNewLabel);
 
-		JLabel lblInserirGuich = new JLabel("Número de disciplinas excedido");
+		JLabel lblInserirGuich = new JLabel("NÚMERO DE DISCIPLINAS ");
 		lblInserirGuich.setHorizontalAlignment(SwingConstants.CENTER);
-		lblInserirGuich.setBounds(32, 44, 744, 239);
+		lblInserirGuich.setBounds(21, 0, 744, 239);
 		lblInserirGuich.setAlignmentY(Component.BOTTOM_ALIGNMENT);
 		lblInserirGuich.setAutoscrolls(true);
 		lblInserirGuich.setForeground(new Color(255, 255, 255));
@@ -96,6 +96,33 @@ public class Excessodisc extends JFrame {
 		btnVoltar_2.setBackground(Color.WHITE);
 		btnVoltar_2.setBounds(305, 428, 148, 39);
 		contentPane.add(btnVoltar_2);
+		
+		JLabel lblExcedido = new JLabel("EXCEDIDO!");
+		lblExcedido.setHorizontalAlignment(SwingConstants.CENTER);
+		lblExcedido.setForeground(Color.WHITE);
+		lblExcedido.setFont(new Font("Javanese Text", Font.BOLD, 46));
+		lblExcedido.setAutoscrolls(true);
+		lblExcedido.setAlignmentY(1.0f);
+		lblExcedido.setBounds(21, 117, 744, 239);
+		contentPane.add(lblExcedido);
+		
+		JLabel lblMximoDe = new JLabel("TURMAS LIMITE");
+		lblMximoDe.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMximoDe.setForeground(Color.WHITE);
+		lblMximoDe.setFont(new Font("Javanese Text", Font.BOLD, 46));
+		lblMximoDe.setAutoscrolls(true);
+		lblMximoDe.setAlignmentY(1.0f);
+		lblMximoDe.setBounds(10, 428, 744, 239);
+		contentPane.add(lblMximoDe);
+		
+		JLabel lblMximoDe_1 = new JLabel("4");
+		lblMximoDe_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMximoDe_1.setForeground(Color.WHITE);
+		lblMximoDe_1.setFont(new Font("Javanese Text", Font.BOLD, 91));
+		lblMximoDe_1.setAutoscrolls(true);
+		lblMximoDe_1.setAlignmentY(1.0f);
+		lblMximoDe_1.setBounds(10, 573, 744, 99);
+		contentPane.add(lblMximoDe_1);
 	}
 }
 

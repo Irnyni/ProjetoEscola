@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Iterator;
 import java.util.TimeZone;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
@@ -163,13 +164,7 @@ public class RealizarInscricao extends JFrame {
 		        System.out.println(lista);
 		        System.out.println(listaTurma);
 		        int quantidadeAlunos = t.getQtdeAlunos();
-//		        if(quantidadeAlunos>=25) {
-//		        	
-//		        	exListaEspera frame = new exListaEspera();
-//		        	frame.setVisible(true);
-//		        	dispose();
-//		        }
-		
+
 				
 			}
 		});
@@ -242,38 +237,91 @@ public class RealizarInscricao extends JFrame {
 					
 				}
 				
-				else {
-					
-					
-					 for (Turma turma : listaTurma) {
-				            int quantidadeAlunos = turma.getQtdeAlunos();
-				            System.out.println(quantidadeAlunos);
-				            // Verifica se a quantidade de alunos é igual a 25
-				       
-				            if (quantidadeAlunos >= 25) {
-				            	
-				               	ExListaEspera frame = new ExListaEspera();
-				        	    frame.setVisible(true);
-					        	dispose();
-
-				            }
-				            else {
-				            	RealizarInscricao2 frame = new RealizarInscricao2();
-				            	
-				            	System.out.println("essa"+lista);
-				                frame.enviaDados(listaTurma,lista);
-				        	    frame.setVisible(true);
-					        	dispose();
-					        	
-					        	
-					        	
-				            }
-					 }
-					
 				
-						
-				}	
-			
+				
+				
+//				else {
+//					
+//					
+//					 for (Turma turma : listaTurma) {
+//				            int quantidadeAlunos = turma.getQtdeAlunos();
+//				            System.out.println(quantidadeAlunos);
+//				            // Verifica se a quantidade de alunos é igual a 25
+//				       
+////				            if (quantidadeAlunos >= 25) {
+////				            	
+////				               	ExListaEspera frame = new ExListaEspera();
+////				        	    frame.setVisible(true);
+////					        	dispose();
+////
+////				            }
+////				            else {
+////				            	RealizarInscricao2 frame = new RealizarInscricao2();
+////				            	
+////				            	System.out.println("essa"+lista);
+////				                frame.enviaDados(listaTurma,lista);
+////				        	    frame.setVisible(true);
+////					        	dispose();
+////					        	
+////					        	
+////					        	
+////				            }
+////				            
+//				            
+//				   
+//					 }
+//	
+//				}	
+				else {
+		          Iterator<Turma> iterator = listaTurma.iterator();
+		            while (iterator.hasNext()) {
+		                Turma turma = iterator.next();
+		                int quantidadeAlunos = turma.getQtdeAlunos();
+		                System.out.println(quantidadeAlunos);
+		                
+		                // Verifica se a quantidade de alunos é igual a 25
+		                if (quantidadeAlunos >= 25) {
+		                    ExListaEspera frame = new ExListaEspera();
+		                    frame.setVisible(true);
+		                    dispose();
+		                    iterator.remove(); // Remove o item da lista
+		                }
+		                
+		                
+		                else {
+			            	RealizarInscricao2 frame = new RealizarInscricao2();
+			            	
+			            	System.out.println("essa"+lista);
+			                frame.enviaDados(listaTurma,lista);
+			        	    frame.setVisible(true);
+				        	dispose();
+				        	
+			            }
+		                
+		                
+		                boolean haValoresIguais = false;
+			            for (int i = 0; i < listaTurma.size() - 1; i++) {
+			                for (int j = i + 1; j < listaTurma.size(); j++) {
+			                    if (listaTurma.get(i).getHorarioAula() == listaTurma.get(j).getHorarioAula()) {
+			                        haValoresIguais = true;
+			                        break;
+			                    }
+			                }
+			                if (haValoresIguais) {
+			                    break;
+			                }
+			            }
+
+			            if (haValoresIguais) {
+			            	ExcessaoHorario frame = new ExcessaoHorario();
+			            	frame.setVisible(true);
+			            } else {
+			                System.out.println("Não existem atributos 'quantidadeAlunos' com valores iguais na lista.");
+			            }  
+		            }
+				
+
+			}
 			}
 		});
 		btnSeguir.setForeground(new Color(64, 0, 0));

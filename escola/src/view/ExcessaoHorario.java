@@ -40,7 +40,7 @@ import com.jgoodies.forms.factories.DefaultComponentFactory;
 
 
 
-public class ExListaEspera extends JFrame {
+public class ExcessaoHorario extends JFrame {
 
 	private JPanel contentPane;
 	private int cont;
@@ -50,7 +50,7 @@ public class ExListaEspera extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ExListaEspera frame = new ExListaEspera();
+					ExcessaoHorario frame = new ExcessaoHorario();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -58,7 +58,7 @@ public class ExListaEspera extends JFrame {
 			}
 		});
 	}
-		public ExListaEspera() {
+		public ExcessaoHorario() {
 		setAlwaysOnTop(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(330, 50, 800, 800);
@@ -74,13 +74,13 @@ public class ExListaEspera extends JFrame {
 		lblNewLabel.setBounds(81, 11, -35, 26);
 		contentPane.add(lblNewLabel);
 
-		JLabel lblInserirGuich = new JLabel("TURMA FECHADA!");
+		JLabel lblInserirGuich = new JLabel("CHOQUE ");
 		lblInserirGuich.setHorizontalAlignment(SwingConstants.CENTER);
-		lblInserirGuich.setBounds(21, 78, 744, 239);
+		lblInserirGuich.setBounds(21, 0, 744, 239);
 		lblInserirGuich.setAlignmentY(Component.BOTTOM_ALIGNMENT);
 		lblInserirGuich.setAutoscrolls(true);
 		lblInserirGuich.setForeground(new Color(255, 255, 255));
-		lblInserirGuich.setFont(new Font("Javanese Text", Font.BOLD, 73));
+		lblInserirGuich.setFont(new Font("Javanese Text", Font.BOLD, 77));
 		contentPane.add(lblInserirGuich);
 		
 		JButton btnVoltar_2 = new JButton("VOLTAR");
@@ -94,19 +94,26 @@ public class ExListaEspera extends JFrame {
 		btnVoltar_2.setForeground(new Color(64, 0, 0));
 		btnVoltar_2.setFont(new Font("Tahoma", Font.BOLD, 25));
 		btnVoltar_2.setBackground(Color.WHITE);
-		btnVoltar_2.setBounds(136, 428, 148, 39);
+		btnVoltar_2.setBounds(305, 544, 148, 39);
 		contentPane.add(btnVoltar_2);
 		
-		JButton btnVoltar_2_1 = new JButton("LISTA DE ESPERA");
-		btnVoltar_2_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		btnVoltar_2_1.setForeground(new Color(64, 0, 0));
-		btnVoltar_2_1.setFont(new Font("Tahoma", Font.BOLD, 25));
-		btnVoltar_2_1.setBackground(Color.WHITE);
-		btnVoltar_2_1.setBounds(399, 428, 308, 39);
-		contentPane.add(btnVoltar_2_1);
+		JLabel lblMximoDe = new JLabel("DE");
+		lblMximoDe.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMximoDe.setForeground(Color.WHITE);
+		lblMximoDe.setFont(new Font("Javanese Text", Font.BOLD, 76));
+		lblMximoDe.setAutoscrolls(true);
+		lblMximoDe.setAlignmentY(1.0f);
+		lblMximoDe.setBounds(0, 148, 744, 239);
+		contentPane.add(lblMximoDe);
+		
+		JLabel lblHorrios = new JLabel("HORÁRIOS!");
+		lblHorrios.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHorrios.setForeground(Color.WHITE);
+		lblHorrios.setFont(new Font("Javanese Text", Font.BOLD, 77));
+		lblHorrios.setAutoscrolls(true);
+		lblHorrios.setAlignmentY(1.0f);
+		lblHorrios.setBounds(10, 304, 744, 239);
+		contentPane.add(lblHorrios);
 	}
 }
 

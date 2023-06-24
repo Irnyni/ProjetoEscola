@@ -16,6 +16,7 @@ import java.awt.event.ActionListener;
 import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.TimeZone;
@@ -37,6 +38,12 @@ import javax.swing.JToggleButton;
 import javax.swing.event.AncestorListener;
 import javax.swing.event.AncestorEvent;
 import javax.swing.event.ChangeListener;
+
+import org.junit.Assert;
+
+import model.Disciplina;
+import model.Turma;
+
 import javax.swing.event.ChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
@@ -47,6 +54,8 @@ public class RealizarInscricao extends JFrame {
 	private int cont;
 	private int a;
 	private JToggleButton tglbtnGeografiaAno;
+	ArrayList<Disciplina> lista = new ArrayList<Disciplina>();
+	ArrayList<Turma> listaTurma = new ArrayList<Turma>();
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -102,7 +111,14 @@ public class RealizarInscricao extends JFrame {
 
 		btnSalvar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("entrei");
+				
+				Disciplina d = new Disciplina("Biologia", "BIO", "Biologia médio", true);
+			    Turma t = new Turma("Juliano", 2, 2022, 25, "SALA 5", "DIURNO");
+		        lista.addAll(Arrays.asList(d));
+		        listaTurma.addAll(Arrays.asList(t));
+		        System.out.println(lista);
+		        System.out.println(listaTurma);
+				
 			}
 		});
 
@@ -117,6 +133,17 @@ public class RealizarInscricao extends JFrame {
 		contentPane.add(btnSalvar);
 		
 		JToggleButton tglbtnMatemticaAno = new JToggleButton("MATEMÁTICA 5 ANO TURMA A");
+		tglbtnMatemticaAno.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+		        Disciplina d = new Disciplina("Matemática", "MT", "Matemática básica", true);	
+			    Turma t = new Turma("João", 1, 2022, 22, "SALA 3", "DIURNO");
+		        lista.addAll(Arrays.asList(d));
+		        listaTurma.addAll(Arrays.asList(t));
+		        System.out.println(lista);
+		        System.out.println(listaTurma);
+		          
+			}
+		});
 		tglbtnMatemticaAno.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		tglbtnMatemticaAno.setFocusPainted(false);
 		tglbtnMatemticaAno.setForeground(new Color(64, 0, 0));
@@ -125,7 +152,27 @@ public class RealizarInscricao extends JFrame {
 		tglbtnMatemticaAno.setBounds(154, 260, 455, 39);
 		contentPane.add(tglbtnMatemticaAno);
 		
-		JToggleButton tglbtnHistoriaAno = new JToggleButton("HISTORIA 5 ANO TURMA D");
+		JToggleButton tglbtnHistoriaAno = new JToggleButton("FILOSOFIA 5 ANO TURMA D");
+		tglbtnHistoriaAno.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				Disciplina d = new Disciplina("Filosofia", "FIL", "Filosofia Médio", true);
+			    Turma t = new Turma("Maria", 1, 2022, 25, "SALA 7", "NOTURNO");
+		        lista.addAll(Arrays.asList(d));
+		        listaTurma.addAll(Arrays.asList(t));
+		        System.out.println(lista);
+		        System.out.println(listaTurma);
+		        int quantidadeAlunos = t.getQtdeAlunos();
+//		        if(quantidadeAlunos>=25) {
+//		        	
+//		        	exListaEspera frame = new exListaEspera();
+//		        	frame.setVisible(true);
+//		        	dispose();
+//		        }
+		
+				
+			}
+		});
 		tglbtnHistoriaAno.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		tglbtnHistoriaAno.setFocusPainted(false);
 		tglbtnHistoriaAno.setForeground(new Color(64, 0, 0));
@@ -153,6 +200,10 @@ public class RealizarInscricao extends JFrame {
 		contentPane.add(tglbtnArtesAno);
 		
 		JToggleButton tglbtnPortugsAno = new JToggleButton("PORTUGÊS 5 ANO TURMA D");
+		tglbtnPortugsAno.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		tglbtnPortugsAno.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		tglbtnPortugsAno.setFocusPainted(false);
 		tglbtnPortugsAno.setForeground(new Color(64, 0, 0));
@@ -182,9 +233,41 @@ public class RealizarInscricao extends JFrame {
 		JButton btnSeguir = new JButton("SEGUIR");
 		btnSeguir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				RealizarInscricao2 frame = new RealizarInscricao2 ();
-				frame.setVisible(true);
-				dispose();
+				int quantidade = lista.size();
+				if(quantidade>4) {
+					Excessodisc frame = new Excessodisc();
+					frame.setVisible(true);
+					dispose();
+					
+				}
+				
+				else {
+					
+					
+					 for (Turma turma : listaTurma) {
+				            int quantidadeAlunos = turma.getQtdeAlunos();
+				            System.out.println(quantidadeAlunos);
+				            // Verifica se a quantidade de alunos é igual a 25
+				       
+				            if (quantidadeAlunos >= 25) {
+				            	System.out.println("entreiaqui");
+
+				               	ExListaEspera frame = new ExListaEspera();
+				        	    frame.setVisible(true);
+					        	dispose();
+
+				            }
+				            else {
+				            	RealizarInscricao2 frame = new RealizarInscricao2();
+				        	    frame.setVisible(true);
+					        	dispose();
+				            }
+					 }
+					
+				
+						
+				}	
+			
 			}
 		});
 		btnSeguir.setForeground(new Color(64, 0, 0));

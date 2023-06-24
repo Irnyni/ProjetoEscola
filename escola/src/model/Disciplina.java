@@ -11,19 +11,21 @@ public class Disciplina {
 	private String sigla;
 	private String descricao;
 	private boolean statusDisc;
+	ArrayList<Disciplina> lista = new ArrayList<Disciplina>();
 	public String getNomeDisc() {
 		return nomeDisc;
 	}
 	
-	
-	public   ArrayList<Disciplina> listarDisc(){
+
+	public   ArrayList<Disciplina> listarDisc(Disciplina d3){
 		
-        Disciplina d1 = new Disciplina("Matemática", "MT", "Matemática básica", true);
-        Disciplina d2 = new Disciplina("Portugues", "pt", "Portugues básico", true);
-        Disciplina d3 = new Disciplina("Biologia", "BIO", "Biologia médio", true);
-        Disciplina d4 = new Disciplina("Filosofia", "FIL", "Filosofia Médio", true);
-        ArrayList<Disciplina> lista = new ArrayList<Disciplina>();
-        lista.addAll(Arrays.asList(d1, d2, d3, d4));
+          Disciplina d1 = new Disciplina("Matemática", "MT", "Matemática básica", true);
+//        Disciplina d2 = new Disciplina("Portugues", "pt", "Portugues básico", true);
+//        Disciplina d3 = new Disciplina("Biologia", "BIO", "Biologia médio", true);
+//        Disciplina d4 = new Disciplina("Filosofia", "FIL", "Filosofia Médio", true);
+
+        lista.addAll(Arrays.asList(d3));
+        System.out.println(lista);
         
 		return lista;
 		

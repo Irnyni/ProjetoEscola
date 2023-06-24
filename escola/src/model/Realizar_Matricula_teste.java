@@ -71,7 +71,7 @@ class Realizar_Matricula_teste {
         // Teste para listar as disciplinas disponíveis
     	Disciplina d = new Disciplina();
         ArrayList<Disciplina> lista = new ArrayList<Disciplina>();
-        lista= d.listarDisc();
+//        lista= d.listarDisc();
         System.out.println(lista);
         Assert.assertEquals(4, lista.size()); // Verifica se a lista de disciplinas tem tamanho igual a 4
     }

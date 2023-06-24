@@ -239,6 +239,7 @@ public class RealizarInscricao extends JFrame {
 					frame.setVisible(true);
 					dispose();
 					
+					
 				}
 				
 				else {
@@ -260,7 +261,7 @@ public class RealizarInscricao extends JFrame {
 				            	RealizarInscricao2 frame = new RealizarInscricao2();
 				            	
 				            	System.out.println("essa"+lista);
-				                frame.enviaDados(lista);
+				                frame.enviaDados(listaTurma,lista);
 				        	    frame.setVisible(true);
 					        	dispose();
 					        	

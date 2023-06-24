@@ -110,6 +110,14 @@ public class Turma {
 		this.localAula = localAula;
 		this.horarioAula = horarioAula;
 	}
+	public Turma(String string, String string2, String string3) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Turma(String string, int i, String string2, String string3) {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public String toString() {
 		return "Turma [nomeProf=" + nomeProf + ", semestre=" + semestre + ", ano=" + ano + ", qtdeAlunos=" + qtdeAlunos

@@ -50,8 +50,8 @@ public class ExcessaoHorario extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ExcessaoHorario frame = new ExcessaoHorario();
-					frame.setVisible(true);
+					
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -89,6 +89,7 @@ public class ExcessaoHorario extends JFrame {
 				RealizarInscricao frame = new RealizarInscricao ();
 				frame.setVisible(true);
 				dispose();
+			    dispose();
 			}
 		});
 		btnVoltar_2.setForeground(new Color(64, 0, 0));

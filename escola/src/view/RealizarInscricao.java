@@ -177,6 +177,16 @@ public class RealizarInscricao extends JFrame {
 		contentPane.add(tglbtnHistoriaAno);
 		
 		tglbtnGeografiaAno = new JToggleButton("GEOGRAFIA 5 ANO TURMA D");
+		tglbtnGeografiaAno.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Disciplina d = new Disciplina("Geografia", "GEO", "Geografia básica", true);
+				Turma t = new Turma("Carlos", 2, 2022, 20, "SALA 3", "NOTURNO");
+		        lista.addAll(Arrays.asList(d));
+		        listaTurma.addAll(Arrays.asList(t));
+		        System.out.println(lista);
+		        System.out.println(listaTurma);
+			}
+		});
 		tglbtnGeografiaAno.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		tglbtnGeografiaAno.setFocusPainted(false);
 		tglbtnGeografiaAno.setForeground(new Color(64, 0, 0));
@@ -185,7 +195,18 @@ public class RealizarInscricao extends JFrame {
 		tglbtnGeografiaAno.setBounds(154, 378, 455, 39);
 		contentPane.add(tglbtnGeografiaAno);
 		
-		JToggleButton tglbtnArtesAno = new JToggleButton("ARTES 5 ANO TURMA A");
+		JToggleButton tglbtnArtesAno = new JToggleButton("INGLÊS 5 ANO TURMA A");
+		tglbtnArtesAno.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Disciplina d = new Disciplina("Inglês", "ING", "Inglês Intermediário", true);
+				Turma t = new Turma("Lucia", 2, 2022, 15, "SALA 8", "VESPERTINO");
+
+		        lista.addAll(Arrays.asList(d));
+		        listaTurma.addAll(Arrays.asList(t));
+		        System.out.println(lista);
+		        System.out.println(listaTurma);
+			}
+		});
 		tglbtnArtesAno.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		tglbtnArtesAno.setFocusPainted(false);
 		tglbtnArtesAno.setForeground(new Color(64, 0, 0));
@@ -194,9 +215,16 @@ public class RealizarInscricao extends JFrame {
 		tglbtnArtesAno.setBounds(154, 436, 455, 39);
 		contentPane.add(tglbtnArtesAno);
 		
-		JToggleButton tglbtnPortugsAno = new JToggleButton("PORTUGÊS 5 ANO TURMA D");
+		JToggleButton tglbtnPortugsAno = new JToggleButton("QUÍMICA 5 ANO TURMA D");
 		tglbtnPortugsAno.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				Disciplina d = new Disciplina("Química Orgânica", "QUI", "Química Avançada", true);
+				Turma t = new Turma("Mariana", 1, 2023, 35, "LAB 2", "DIURNO");
+
+		        lista.addAll(Arrays.asList(d));
+		        listaTurma.addAll(Arrays.asList(t));
+		        System.out.println(lista);
+		        System.out.println(listaTurma);
 			}
 		});
 		tglbtnPortugsAno.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -207,7 +235,18 @@ public class RealizarInscricao extends JFrame {
 		tglbtnPortugsAno.setBounds(154, 494, 455, 39);
 		contentPane.add(tglbtnPortugsAno);
 		
-		JToggleButton tglbtnPortugusAno = new JToggleButton("PORTUGUÊS 5 ANO TURMA A");
+		JToggleButton tglbtnPortugusAno = new JToggleButton("BIOLOGIA  ANO TURMA C");
+		tglbtnPortugusAno.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Disciplina d = new Disciplina("Biologia Avançada", "BIO", "Biologia médio", true);
+				Turma t = new Turma("Luciana", 2, 2022, 25, "SALA 7", "DIURNO");
+
+		        lista.addAll(Arrays.asList(d));
+		        listaTurma.addAll(Arrays.asList(t));
+		        System.out.println(lista);
+		        System.out.println(listaTurma);
+			}
+		});
 		tglbtnPortugusAno.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		tglbtnPortugusAno.setFocusPainted(false);
 		tglbtnPortugusAno.setForeground(new Color(64, 0, 0));
@@ -216,7 +255,17 @@ public class RealizarInscricao extends JFrame {
 		tglbtnPortugusAno.setBounds(154, 555, 455, 39);
 		contentPane.add(tglbtnPortugusAno);
 		
-		JToggleButton tglbtnBiologiaAno = new JToggleButton("BIOLOGIA 5 ANO TURMA A");
+		JToggleButton tglbtnBiologiaAno = new JToggleButton("BIOLOGIA AV 6 ANO TURMA D");
+		tglbtnBiologiaAno.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Disciplina d = new Disciplina("Biologia", "BIO", "Biologia médio", true);
+			    Turma t = new Turma("Glauber", 2, 2022, 21, "SALA 5", "NOTURNO");
+		        lista.addAll(Arrays.asList(d));
+		        listaTurma.addAll(Arrays.asList(t));
+		        System.out.println(lista);
+		        System.out.println(listaTurma);
+			}
+		});
 		tglbtnBiologiaAno.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		tglbtnBiologiaAno.setFocusPainted(false);
 		tglbtnBiologiaAno.setForeground(new Color(64, 0, 0));
@@ -233,45 +282,12 @@ public class RealizarInscricao extends JFrame {
 					Excessodisc frame = new Excessodisc();
 					frame.setVisible(true);
 					dispose();
+				     dispose();
 					
 					
 				}
 				
-				
-				
-				
-//				else {
-//					
-//					
-//					 for (Turma turma : listaTurma) {
-//				            int quantidadeAlunos = turma.getQtdeAlunos();
-//				            System.out.println(quantidadeAlunos);
-//				            // Verifica se a quantidade de alunos é igual a 25
-//				       
-////				            if (quantidadeAlunos >= 25) {
-////				            	
-////				               	ExListaEspera frame = new ExListaEspera();
-////				        	    frame.setVisible(true);
-////					        	dispose();
-////
-////				            }
-////				            else {
-////				            	RealizarInscricao2 frame = new RealizarInscricao2();
-////				            	
-////				            	System.out.println("essa"+lista);
-////				                frame.enviaDados(listaTurma,lista);
-////				        	    frame.setVisible(true);
-////					        	dispose();
-////					        	
-////					        	
-////					        	
-////				            }
-////				            
-//				            
-//				   
-//					 }
-//	
-//				}	
+
 				else {
 		          Iterator<Turma> iterator = listaTurma.iterator();
 		            while (iterator.hasNext()) {
@@ -283,7 +299,7 @@ public class RealizarInscricao extends JFrame {
 		                if (quantidadeAlunos >= 25) {
 		                    ExListaEspera frame = new ExListaEspera();
 		                    frame.setVisible(true);
-		                    dispose();
+		                    dispose();   
 		                    iterator.remove(); // Remove o item da lista
 		                }
 		                
@@ -295,6 +311,7 @@ public class RealizarInscricao extends JFrame {
 			                frame.enviaDados(listaTurma,lista);
 			        	    frame.setVisible(true);
 				        	dispose();
+				            dispose();
 				        	
 			            }
 		                
@@ -315,6 +332,7 @@ public class RealizarInscricao extends JFrame {
 			            if (haValoresIguais) {
 			            	ExcessaoHorario frame = new ExcessaoHorario();
 			            	frame.setVisible(true);
+			                dispose();
 			            } else {
 			                System.out.println("Não existem atributos 'quantidadeAlunos' com valores iguais na lista.");
 			            }  

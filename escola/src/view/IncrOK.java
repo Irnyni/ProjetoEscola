@@ -51,7 +51,7 @@ public class IncrOK extends JFrame {
 			public void run() {
 				try {
 					IncrOK frame = new IncrOK();
-					frame.setVisible(true);
+				
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

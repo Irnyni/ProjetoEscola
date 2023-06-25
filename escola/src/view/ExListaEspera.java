@@ -50,8 +50,8 @@ public class ExListaEspera extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ExListaEspera frame = new ExListaEspera();
-					frame.setVisible(true);
+				
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -89,6 +89,7 @@ public class ExListaEspera extends JFrame {
 				RealizarInscricao frame = new RealizarInscricao ();
 				frame.setVisible(true);
 				dispose();
+			    dispose();
 			}
 		});
 		btnVoltar_2.setForeground(new Color(64, 0, 0));
@@ -100,7 +101,10 @@ public class ExListaEspera extends JFrame {
 		JButton btnVoltar_2_1 = new JButton("LISTA DE ESPERA");
 		btnVoltar_2_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			}
+				
+				ListaEspera frame = new ListaEspera();
+				frame.setVisible(true);
+				dispose();			}
 		});
 		btnVoltar_2_1.setForeground(new Color(64, 0, 0));
 		btnVoltar_2_1.setFont(new Font("Tahoma", Font.BOLD, 25));

@@ -51,7 +51,7 @@ public class Excessodisc extends JFrame {
 			public void run() {
 				try {
 					Excessodisc frame = new Excessodisc();
-					frame.setVisible(true);
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

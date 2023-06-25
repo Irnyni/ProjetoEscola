@@ -73,7 +73,7 @@ public class Disciplina {
 	}
 
 
-
+ListadeEspera L = new ListadeEspera();
 	
 
 }

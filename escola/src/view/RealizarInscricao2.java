@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
+import controller.Inscricao_Controller;
 import model.Disciplina;
 import model.Turma;
 
@@ -189,9 +190,16 @@ public class RealizarInscricao2 extends JFrame {
 		btnFinalizar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				IncrOK frame = new IncrOK();
-				frame.setVisible(true);
-				dispose();
+				Inscricao_Controller controll= new Inscricao_Controller();
+				Boolean confirmacao = controll.concluirInscricao();
+				if (true) {
+					
+					IncrOK frame = new IncrOK();
+					frame.setVisible(true);
+					dispose();
+					
+				}
+				
 			}
 		});
 		btnFinalizar.setForeground(new Color(64, 0, 0));

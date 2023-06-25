@@ -42,6 +42,7 @@ import javax.swing.event.ChangeListener;
 
 import org.junit.Assert;
 
+import controller.Inscricao_Controller;
 import model.Disciplina;
 import model.Turma;
 
@@ -305,12 +306,9 @@ public class RealizarInscricao extends JFrame {
 		                
 		                
 		                else {
-			            	RealizarInscricao2 frame = new RealizarInscricao2();
-			            	
-			            	System.out.println("essa"+lista);
-			                frame.enviaDados(listaTurma,lista);
-			        	    frame.setVisible(true);
-				        	dispose();
+		                	
+		                	Inscricao_Controller controll = new Inscricao_Controller();
+		                	controll.apresentarDiscipina(listaTurma,lista);
 				            dispose();
 				        	
 			            }
@@ -333,9 +331,7 @@ public class RealizarInscricao extends JFrame {
 			            	ExcessaoHorario frame = new ExcessaoHorario();
 			            	frame.setVisible(true);
 			                dispose();
-			            } else {
-			                System.out.println("Não existem atributos 'quantidadeAlunos' com valores iguais na lista.");
-			            }  
+			            } 
 		            }
 				
 

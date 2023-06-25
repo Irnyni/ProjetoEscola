@@ -19,7 +19,7 @@ public class Turma {
 	private String localAula;
 	private String horarioAula;
 	
-	Disciplina d = new Disciplina();
+
 	public   List<String> listarTurmas(){
 		
 	
@@ -124,7 +124,8 @@ public class Turma {
 				+ ", localAula=" + localAula + ", horarioAula=" + horarioAula + "]";
 	}
 	
-
+Professor p = new Professor(); 
+Disciplina d = new Disciplina();
 
 
 }

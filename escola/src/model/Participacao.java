@@ -27,5 +27,6 @@ public class Participacao {
 	public Participacao() {
 		super();
 	}
-     
+     Aluno a = new Aluno();
+     Turma y = new Turma();
 }

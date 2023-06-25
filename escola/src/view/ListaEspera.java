@@ -16,6 +16,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Random;
 import java.util.TimeZone;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
@@ -37,6 +38,7 @@ public class ListaEspera extends JFrame {
 	private JPanel contentPane;
 	private int cont;
 	private int a;
+	private JTextField textField;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -58,7 +60,7 @@ public class ListaEspera extends JFrame {
 		contentPane.setSize(new Dimension(30, 10));
 		contentPane.setBackground(new Color(47, 0, 0));
 		contentPane.setForeground(new Color(64, 0, 64));
-		contentPane.setBorder(new EmptyBorder(0, 0, 0, 0));
+		contentPane.setBorder(null);
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
@@ -74,63 +76,46 @@ public class ListaEspera extends JFrame {
 		lblInserirGuich.setFont(new Font("Javanese Text", Font.BOLD, 80));
 		contentPane.add(lblInserirGuich);
 		
-		JToggleButton tglbtnBiologia_2 = new JToggleButton("BIOLOGIA 2");
-		tglbtnBiologia_2.setForeground(new Color(64, 0, 0));
-		tglbtnBiologia_2.setFont(new Font("Tahoma", Font.BOLD, 25));
-		tglbtnBiologia_2.setBackground(Color.WHITE);
-		tglbtnBiologia_2.setBounds(183, 241, 388, 39);
-		contentPane.add(tglbtnBiologia_2);
-		
-		JLabel lblListaDeTurmas = new JLabel("LISTA DE TURMAS");
+		JLabel lblListaDeTurmas = new JLabel("POSIÇÃO");
 		lblListaDeTurmas.setHorizontalAlignment(SwingConstants.CENTER);
 		lblListaDeTurmas.setForeground(Color.WHITE);
 		lblListaDeTurmas.setFont(new Font("Javanese Text", Font.BOLD, 45));
 		lblListaDeTurmas.setAutoscrolls(true);
 		lblListaDeTurmas.setAlignmentY(1.0f);
-		lblListaDeTurmas.setBounds(111, 125, 522, 58);
+		lblListaDeTurmas.setBounds(104, 128, 522, 78);
 		contentPane.add(lblListaDeTurmas);
 		
-		JToggleButton tglbtnCincias_1 = new JToggleButton("CIÊNCIAS 2");
-		tglbtnCincias_1.setForeground(new Color(64, 0, 0));
-		tglbtnCincias_1.setFont(new Font("Tahoma", Font.BOLD, 25));
-		tglbtnCincias_1.setBackground(Color.WHITE);
-		tglbtnCincias_1.setBounds(183, 314, 388, 39);
-		contentPane.add(tglbtnCincias_1);
-		
-		JToggleButton tglbtnBiologia_1 = new JToggleButton("HISTÓRIA 2");
-		tglbtnBiologia_1.setForeground(new Color(64, 0, 0));
-		tglbtnBiologia_1.setFont(new Font("Tahoma", Font.BOLD, 25));
-		tglbtnBiologia_1.setBackground(Color.WHITE);
-		tglbtnBiologia_1.setBounds(183, 389, 388, 39);
-		contentPane.add(tglbtnBiologia_1);
-		
-		JToggleButton tglbtnMatemtica = new JToggleButton("MATEMÁTICA 2");
-		tglbtnMatemtica.setForeground(new Color(64, 0, 0));
-		tglbtnMatemtica.setFont(new Font("Tahoma", Font.BOLD, 25));
-		tglbtnMatemtica.setBackground(Color.WHITE);
-		tglbtnMatemtica.setBounds(184, 465, 387, 39);
-		contentPane.add(tglbtnMatemtica);
-		
-		JButton btnSeguir = new JButton("AVANÇAR");
-		btnSeguir.addActionListener(new ActionListener() {
+		JButton btnVoltar_2 = new JButton("VOLTAR");
+		btnVoltar_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ListaEspera2 frame = new ListaEspera2();
+				RealizarInscricao frame =new RealizarInscricao();
 				frame.setVisible(true);
 				dispose();
 			}
 		});
-		btnSeguir.setForeground(new Color(64, 0, 0));
-		btnSeguir.setFont(new Font("Tahoma", Font.BOLD, 25));
-		btnSeguir.setBackground(Color.WHITE);
-		btnSeguir.setBounds(561, 672, 181, 39);
-		contentPane.add(btnSeguir);
-		
-		JButton btnVoltar_2 = new JButton("VOLTAR");
 		btnVoltar_2.setForeground(new Color(64, 0, 0));
 		btnVoltar_2.setFont(new Font("Tahoma", Font.BOLD, 25));
 		btnVoltar_2.setBackground(Color.WHITE);
-		btnVoltar_2.setBounds(25, 672, 148, 39);
+		btnVoltar_2.setBounds(294, 450, 148, 39);
 		contentPane.add(btnVoltar_2);
+		
+		textField = new JTextField();
+		textField.setOpaque(false);
+		textField.setEditable(false);
+		textField.setForeground(new Color(255, 255, 255));
+		textField.setBackground(new Color(40, 0, 0));
+		textField.setHorizontalAlignment(SwingConstants.CENTER);
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 99));
+		Random random = new Random();
+
+		// Gerar um número aleatório entre 1 e 25
+		int numeroAleatorio = random.nextInt(25) + 1;
+
+		// Definir o número aleatório como o texto do campo de texto
+		textField.setText(String.valueOf(numeroAleatorio));
+		textField.setBounds(246, 230, 245, 148);
+		contentPane.add(textField);
+		textField.setColumns(10);
 	}
 }
 

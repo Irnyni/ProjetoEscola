@@ -28,6 +28,8 @@ import javax.swing.JPasswordField;
 import java.awt.Cursor;
 import javax.swing.JRadioButton;
 import java.awt.Component;
+import java.awt.Container;
+
 import javax.swing.SwingConstants;
 import java.awt.Dimension;
 import java.awt.Button;
@@ -58,6 +60,7 @@ public class RealizarInscricao extends JFrame {
 	private JToggleButton tglbtnGeografiaAno;
 	ArrayList<Disciplina> lista = new ArrayList<Disciplina>();
 	ArrayList<Turma> listaTurma = new ArrayList<Turma>();
+	ArrayList<Turma> turmasComValoresIguais = new ArrayList<Turma>(); 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -115,7 +118,7 @@ public class RealizarInscricao extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				Disciplina d = new Disciplina("Biologia", "BIO", "Biologia médio", true);
-			    Turma t = new Turma("Juliano", 2, 2022, 25, "SALA 5", "DIURNO");
+			    Turma t = new Turma("Juliano", 2, 2022, 20, "SALA 5", "DIURNO2");
 		        lista.addAll(Arrays.asList(d));
 		        listaTurma.addAll(Arrays.asList(t));
 		        System.out.println(lista);
@@ -138,7 +141,7 @@ public class RealizarInscricao extends JFrame {
 		tglbtnMatemticaAno.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 		        Disciplina d = new Disciplina("Matemática", "MT", "Matemática básica", true);	
-			    Turma t = new Turma("João", 1, 2022, 22, "SALA 3", "DIURNO");
+			    Turma t = new Turma("João", 1, 2022, 22, "SALA 3", "DIURNO1");
 		        lista.addAll(Arrays.asList(d));
 		        listaTurma.addAll(Arrays.asList(t));
 		        System.out.println(lista);
@@ -159,7 +162,7 @@ public class RealizarInscricao extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				Disciplina d = new Disciplina("Filosofia", "FIL", "Filosofia Médio", true);
-			    Turma t = new Turma("Maria", 1, 2022, 24, "SALA 7", "NOTURNO");
+			    Turma t = new Turma("Maria", 1, 2022, 24, "SALA 7", "VESPERTINO3");
 		        lista.addAll(Arrays.asList(d));
 		        listaTurma.addAll(Arrays.asList(t));
 		        System.out.println(lista);
@@ -181,7 +184,7 @@ public class RealizarInscricao extends JFrame {
 		tglbtnGeografiaAno.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Disciplina d = new Disciplina("Geografia", "GEO", "Geografia básica", true);
-				Turma t = new Turma("Carlos", 2, 2022, 20, "SALA 3", "NOTURNO");
+				Turma t = new Turma("Carlos", 2, 2022, 20, "SALA 3", "VESPERTINO2");
 		        lista.addAll(Arrays.asList(d));
 		        listaTurma.addAll(Arrays.asList(t));
 		        System.out.println(lista);
@@ -200,7 +203,7 @@ public class RealizarInscricao extends JFrame {
 		tglbtnArtesAno.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Disciplina d = new Disciplina("Inglês", "ING", "Inglês Intermediário", true);
-				Turma t = new Turma("Lucia", 2, 2022, 15, "SALA 8", "VESPERTINO");
+				Turma t = new Turma("Lucia", 2, 2022, 15, "SALA 8", "VESPERTINO1");
 
 		        lista.addAll(Arrays.asList(d));
 		        listaTurma.addAll(Arrays.asList(t));
@@ -220,7 +223,7 @@ public class RealizarInscricao extends JFrame {
 		tglbtnPortugsAno.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Disciplina d = new Disciplina("Química Orgânica", "QUI", "Química Avançada", true);
-				Turma t = new Turma("Mariana", 1, 2023, 35, "LAB 2", "DIURNO");
+				Turma t = new Turma("Mariana", 1, 2023, 35, "LAB 2", "DIURNO2");
 
 		        lista.addAll(Arrays.asList(d));
 		        listaTurma.addAll(Arrays.asList(t));
@@ -240,7 +243,7 @@ public class RealizarInscricao extends JFrame {
 		tglbtnPortugusAno.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Disciplina d = new Disciplina("Biologia Avançada", "BIO", "Biologia médio", true);
-				Turma t = new Turma("Luciana", 2, 2022, 25, "SALA 7", "DIURNO");
+				Turma t = new Turma("Luciana", 2, 2022, 25, "SALA 7", "DIURNO1");
 
 		        lista.addAll(Arrays.asList(d));
 		        listaTurma.addAll(Arrays.asList(t));
@@ -260,7 +263,7 @@ public class RealizarInscricao extends JFrame {
 		tglbtnBiologiaAno.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Disciplina d = new Disciplina("Biologia", "BIO", "Biologia médio", true);
-			    Turma t = new Turma("Glauber", 2, 2022, 21, "SALA 5", "NOTURNO");
+			    Turma t = new Turma("Glauber", 2, 2022, 25, "SALA 5", "NOTURNO");
 		        lista.addAll(Arrays.asList(d));
 		        listaTurma.addAll(Arrays.asList(t));
 		        System.out.println(lista);
@@ -299,6 +302,7 @@ public class RealizarInscricao extends JFrame {
 		                // Verifica se a quantidade de alunos é igual a 25
 		                if (quantidadeAlunos >= 25) {
 		                    ExListaEspera frame = new ExListaEspera();
+		                   
 		                    frame.setVisible(true);
 		                    dispose();   
 		                    iterator.remove(); // Remove o item da lista
@@ -319,16 +323,24 @@ public class RealizarInscricao extends JFrame {
 			                for (int j = i + 1; j < listaTurma.size(); j++) {
 			                    if (listaTurma.get(i).getHorarioAula() == listaTurma.get(j).getHorarioAula()) {
 			                        haValoresIguais = true;
+			                        if (haValoresIguais) {
+			                        	
+					                    turmasComValoresIguais.add(turma); // Adiciona a turma à lista de turmas com valores iguais
+					                    System.out.println("turma repetidas"+turmasComValoresIguais);
+					                }
 			                        break;
 			                    }
 			                }
 			                if (haValoresIguais) {
 			                    break;
 			                }
+			                
+			               
 			            }
 
 			            if (haValoresIguais) {
 			            	ExcessaoHorario frame = new ExcessaoHorario();
+			            	frame.enviaDados(listaTurma,lista);
 			            	frame.setVisible(true);
 			                dispose();
 			            } 
